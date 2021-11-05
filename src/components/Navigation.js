@@ -3,7 +3,7 @@ import { Navbar, NavbarBrand, NavbarToggler, Collapse, Nav, NavItem, NavLink } f
 
 
 
-function Navigation() {
+function Navigation() {    
     return (
         <div>
 
