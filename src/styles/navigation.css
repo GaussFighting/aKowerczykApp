@@ -28,3 +28,7 @@
     background-color: #f3b304;
     color: #fff;
 }
+.navbar-light .navbar-nav .nav-link:visited {
+    background-color: #f3b304;
+    color: #fff;
+}
