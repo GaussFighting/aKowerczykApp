@@ -19,3 +19,9 @@ code {
 }
 
 @import "navigation.css";
+@import "mainpage.css";
+@import "services.css";
+@import "blog.css";
+@import "offers.css";
+@import "about.css";
+@import "contact.css";

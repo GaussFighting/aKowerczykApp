@@ -1,9 +1,9 @@
 import React from 'react';
-import { Navbar, NavbarBrand, NavbarToggler, Collapse, Nav, NavItem, NavLink } from 'reactstrap';
+import { Navbar, NavbarBrand, NavbarToggler, Collapse, Nav, NavItem } from 'reactstrap';
+import { NavLink } from "react-router-dom";
 
 
-
-function Navigation() {
+function Navigation() {    
     return (
         <div>
 
@@ -24,32 +24,32 @@ function Navigation() {
                         navbar
                     >
                         <NavItem >
-                            <NavLink className="pl-4" href="">
+                            <NavLink className="nav-link pl-4" to="/">
                                 STRONA GŁÓWNA
                             </NavLink>
                         </NavItem>
                         <NavItem >
-                            <NavLink className="pl-4" href="">
+                            <NavLink className="nav-link pl-4" to="/services">
                                 USŁUGI
                             </NavLink>
                         </NavItem>
                         <NavItem >
-                            <NavLink className="pl-4" href="">
+                            <NavLink className="nav-link pl-4" to="/blog">
                                 BLOG
                             </NavLink>
                         </NavItem>
                         <NavItem >
-                            <NavLink className="pl-4" href="">
+                            <NavLink className="nav-link pl-4" to="/offers">
                                 OFERTY
                             </NavLink>
                         </NavItem>
                         <NavItem >
-                            <NavLink className="pl-4" href="">
+                            <NavLink className="nav-link pl-4" to="/about">
                                 O NAS
                             </NavLink>
                         </NavItem>
                         <NavItem >
-                            <NavLink className="pl-4" href="">
+                            <NavLink className="nav-link pl-4" to="/contact">
                                 KONTAKT
                             </NavLink>
                         </NavItem>
