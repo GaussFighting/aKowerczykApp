@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, NavbarBrand, NavbarToggler, Collapse, Nav, NavItem, NavLink, NavbarText } from 'reactstrap';
+import { Navbar, NavbarBrand, NavbarToggler, Collapse, Nav, NavItem, NavLink } from 'reactstrap';
 
 
 
@@ -8,7 +8,7 @@ function Navigation() {
         <div>
 
             <Navbar
-                color="success"
+                className="navigation"
                 expand="md"
                 fixed="top"
                 full
