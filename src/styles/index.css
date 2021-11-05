@@ -1,0 +1,27 @@
+@font-face{
+  font-family: mainfont;
+  src: url(./fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+body {
+  margin: 0;
+  font-family: mainfont, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f3f2f2;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@import "navigation.css";
+@import "mainpage.css";
+@import "services.css";
+@import "blog.css";
+@import "offers.css";
+@import "about.css";
+@import "contact.css";
