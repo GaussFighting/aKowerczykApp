@@ -12,6 +12,7 @@ import Blog from './components/Blog';
 import Offers from './components/Offers';
 import About from './components/About';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -19,27 +20,15 @@ function App() {
       <div>
         <Navigation />
         <Routes>
-          <Route path="/services">
-            <Services />
-          </Route>
-          <Route path="/blog">
-            <Blog />
-          </Route>
-          <Route path="/offers">
-            <Offers />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/">
-            <MainPage />
-          </Route>
+          <Route path="/services" element={<Services/>}/>
+          <Route path="/blog" element={<Blog />}/>
+          <Route path="/offers" element={<Offers />}/>
+          <Route path="/about" element={<About />}/>
+          <Route path="/contact" element={<Contact />}/>
+          <Route path="/" element={<MainPage />}/>
         </Routes>
 
-
+        <Footer />
       </div>
     </Router>
   );

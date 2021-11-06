@@ -13,7 +13,6 @@ function Navigation() {
     
     return (
         <div>
-
             <Navbar
                 className="navigation"
                 expand="md"
