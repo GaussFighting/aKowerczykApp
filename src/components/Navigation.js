@@ -1,9 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Navbar, NavbarBrand, NavbarToggler, Collapse, Nav, NavItem } from 'reactstrap';
 import { NavLink } from "react-router-dom";
 
 
-function Navigation() {    
+function Navigation() {  
+    
+    const [isOpen, setIsOpen] = useState(false); 
+    
+    const toggle = () => {
+        setIsOpen(prevState => !prevState);
+    };
+    
     return (
         <div>
 
@@ -17,8 +24,8 @@ function Navigation() {
                 <NavbarBrand href="/">
                     LOGO
                 </NavbarBrand>
-                <NavbarToggler onClick={function noRefCheck() { }} />
-                <Collapse navbar>
+                <NavbarToggler onClick={toggle} />
+                <Collapse isOpen={isOpen} navbar>
                     <Nav
                         className="justify-content-end" style={{ width: "100%" }}
                         navbar
