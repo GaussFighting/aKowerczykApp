@@ -5,8 +5,12 @@
 .navbar{
     padding: 0px;
 }
+.navbar-brand{
+    padding-left: 15px;
+}
 .container-fluid{
     padding-right: 0px;
+    padding-left: 0px;
 }
 .nav-link {
     padding: 1.5rem 4rem 1.5rem 4rem !important;
