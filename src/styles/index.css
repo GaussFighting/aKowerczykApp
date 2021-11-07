@@ -25,24 +25,28 @@ code {
     monospace;
 }
 
-.inner-link{
-    color: #519405;
-    text-decoration: none;
-}
-.inner-link:hover{
-  color: #f3b304;
-}
-a.color-green{
-  color: #519405;
+.page-container {
+  min-height: calc(100vh - 168px - 72px);
 }
 
-@import "navigation.css";
-@import "mainpage.css";
-@import "services.css";
-@import "blog.css";
-@import "offers.css";
-@import "about.css";
-@import "contact.css";
-@import "footer.css";
-@import "MPAbout.css";
+.inner-link {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.inner-link:hover {
+  color: var(--secondary-color);
+}
+a.color-green {
+  color: var(--primary-color);
+}
+
+@import 'navigation.css';
+@import 'mainpage.css';
+@import 'services.css';
+@import 'blog.css';
+@import 'offers.css';
+@import 'about.css';
+@import 'contact.css';
+@import 'footer.css';
+@import 'MPAbout.css';
 @import 'contact_form.css';
