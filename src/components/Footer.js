@@ -1,8 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { NavLink } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import SocialMedia from './SocialMedia';
 
 
 function Footer() {
@@ -26,8 +25,7 @@ function Footer() {
                     </Col>
                     <Col className="py-3">
                         <div className="fw-bold pb-2">SOCIAL MEDIA: </div>
-                        <span><a className="socialmedia-icon" href="https://www.facebook.com"><FontAwesomeIcon icon={faFacebook} size="2x"/>{`   `}</a></span>
-                        <span><a className="socialmedia-icon" href="https://www.linkedin.com/in/agata-kowerczyk-a82022137/"><FontAwesomeIcon icon={faLinkedin} size="2x"/></a></span>
+                        <SocialMedia/>
                     </Col>
                 </Row>
                 <Row>

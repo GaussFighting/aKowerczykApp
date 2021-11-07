@@ -18,6 +18,17 @@ code {
     monospace;
 }
 
+.inner-link{
+    color: #519405;
+    text-decoration: none;
+}
+.inner-link:hover{
+  color: #f3b304;
+}
+a.color-green{
+  color: #519405;
+}
+
 @import "navigation.css";
 @import "mainpage.css";
 @import "services.css";
@@ -26,3 +37,4 @@ code {
 @import "about.css";
 @import "contact.css";
 @import "footer.css";
+@import "MPAbout.css";
