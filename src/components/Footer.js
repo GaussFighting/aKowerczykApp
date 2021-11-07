@@ -21,7 +21,7 @@ function Footer() {
                         </NavLink>
                         <div> telefon: 695-606-006 </div>
                         <div> e-mail: akower@poczta.onet.pl  </div>
-                        <div className="pt-2"> POLITYKA PRYWATNOŚCI </div>
+                        <div className="pt-2"><NavLink className="fw-bold pb-2 footer-contact" to="/privacy-policy"> POLITYKA PRYWATNOŚCI </NavLink></div>
                     </Col>
                     <Col className="py-3">
                         <div className="fw-bold pb-2">SOCIAL MEDIA: </div>
