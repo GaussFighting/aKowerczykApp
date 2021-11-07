@@ -4,7 +4,7 @@ import SocialMedia from "./SocialMedia";
 
 function About() {
     return (
-        <div className="container py-5">
+        <div className="container page-container py-5">
             <h1>O FIRMIE</h1>
 
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.

@@ -8,8 +8,7 @@ function ContactForm() {
     console.log(e.target.value)
   }
   return (
-    <div className="container py-5 contact-form">
-      <h1>Kontakt</h1>
+    <div>
       <h3>Dane do kontaktu:</h3>
       <Form name="contactForm" method="POST" data-netlify="true" onSubmit={onSubmit}>
         <FormGroup>
@@ -46,7 +45,7 @@ function ContactForm() {
             niezbędnym do realizacji obsługi niniejszego zgłoszenia. Zapoznałem
             się z treścią informacji o sposobie przetwarzania moich danych
             osobowych ze stony{' '}
-            <Link to="/privacy-policy">polityki prywatności</Link>
+            <Link className="inner-link" to="/privacy-policy">polityki prywatności</Link>
           </Label>
         </FormGroup>
         <div className="text-center">
