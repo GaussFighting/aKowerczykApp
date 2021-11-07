@@ -20,6 +20,7 @@ function App() {
     <Router>
       <div>
         <Navigation />
+        <div style={{height: "72px"}}> </div>
         <Routes>
           <Route path="/services" element={<Services/>}/>
           <Route path="/blog" element={<Blog />}/>
