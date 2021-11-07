@@ -13,6 +13,7 @@ import Offers from './components/Offers';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import PrivacyPolicy from './components/PrivacyPolicy';
 
 function App() {
   return (
@@ -25,9 +26,9 @@ function App() {
           <Route path="/offers" element={<Offers />}/>
           <Route path="/about" element={<About />}/>
           <Route path="/contact" element={<Contact />}/>
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/" element={<MainPage />}/>
         </Routes>
-
         <Footer />
       </div>
     </Router>

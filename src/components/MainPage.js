@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ContactForm from './ContactForm';
 
 
 function MainPage() {
@@ -13,8 +13,7 @@ function MainPage() {
             <div style={{backgroundColor: "rgb(200, 200, 200)", height: "200px"}}></div>
             <div style={{backgroundColor: "#f3f2f2", height: "200px"}}></div>
             <div style={{backgroundColor: "rgb(200, 200, 200)", height: "200px"}}></div>
-
-        
+            <ContactForm/>
         </div>
     )
 };

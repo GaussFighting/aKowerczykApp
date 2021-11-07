@@ -1,0 +1,17 @@
+.contact-form a {
+  color: var(--primary-color);
+}
+
+.contact-form a:hover {
+  color: var(--secondary-color);
+}
+
+.btn_submit_form {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.btn_submit_form:hover {
+  background-color: var(--secondary-color);
+  border: none;
+}
