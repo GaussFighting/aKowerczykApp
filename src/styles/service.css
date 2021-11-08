@@ -1,0 +1,10 @@
+h3.service-title{
+    display: inline;
+}
+.service-icon {
+    color: var(--primary-color);
+  }
+.service-icon:hover {
+    color: var(--secondary-color);
+  }
+  

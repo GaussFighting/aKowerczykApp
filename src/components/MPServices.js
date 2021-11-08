@@ -5,9 +5,9 @@ import { Container, Row, Col } from 'reactstrap';
 import { faSearchLocation, faMarker, faHouseUser } from '@fortawesome/free-solid-svg-icons';
 
 
-function Services() {
+function MPServices() {
     return (
-        <div className="container page-container py-5">
+        <div className="container py-5">
             <NavLink className="inner-link" to="/services"><h1>USŁUGI</h1></NavLink>
             <Container>
                 <Row>
@@ -18,7 +18,7 @@ function Services() {
                             It has survived not only five centuries, but also the leap into electronic typesetting,
                             remaining essentially unchanged. It was popularised in the 1960s with the release of
                             Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                            publishing software like Aldus PageMaker including versions of Lorem Ipsum.`} isCollapseOpen={true}/>
+                            publishing software like Aldus PageMaker including versions of Lorem Ipsum.`} isCollapseOpen={false}/>
                     </Col>
                     <Col>
                         <Service icon={faMarker} title={'NAJEM'} description={`Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -27,7 +27,7 @@ function Services() {
                             It has survived not only five centuries, but also the leap into electronic typesetting,
                             remaining essentially unchanged. It was popularised in the 1960s with the release of
                             Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                            publishing software like Aldus PageMaker including versions of Lorem Ipsum.`} isCollapseOpen={true}/>
+                            publishing software like Aldus PageMaker including versions of Lorem Ipsum.`} isCollapseOpen={false} />
                     </Col>
                     <Col>
                         <Service icon={faHouseUser} title={'HOME STAGING'} description={`Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -36,7 +36,7 @@ function Services() {
                             It has survived not only five centuries, but also the leap into electronic typesetting,
                             remaining essentially unchanged. It was popularised in the 1960s with the release of
                             Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                            publishing software like Aldus PageMaker including versions of Lorem Ipsum.`} isCollapseOpen={true}/>
+                            publishing software like Aldus PageMaker including versions of Lorem Ipsum.`} isCollapseOpen={false} />
                     </Col>
                 </Row>
                 <Row>
@@ -47,7 +47,7 @@ function Services() {
                             It has survived not only five centuries, but also the leap into electronic typesetting,
                             remaining essentially unchanged. It was popularised in the 1960s with the release of
                             Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                            publishing software like Aldus PageMaker including versions of Lorem Ipsum.`} isCollapseOpen={true}/>
+                            publishing software like Aldus PageMaker including versions of Lorem Ipsum.`} isCollapseOpen={false}/>
                     </Col>
                     <Col>
                         <Service icon={faMarker} title={'NAJEM'} description={`Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -56,7 +56,7 @@ function Services() {
                             It has survived not only five centuries, but also the leap into electronic typesetting,
                             remaining essentially unchanged. It was popularised in the 1960s with the release of
                             Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                            publishing software like Aldus PageMaker including versions of Lorem Ipsum.`} isCollapseOpen={true}/>
+                            publishing software like Aldus PageMaker including versions of Lorem Ipsum.`} isCollapseOpen={false} />
                     </Col>
                     <Col>
                         <Service icon={faHouseUser} title={'HOME STAGING'} description={`Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -65,7 +65,7 @@ function Services() {
                             It has survived not only five centuries, but also the leap into electronic typesetting,
                             remaining essentially unchanged. It was popularised in the 1960s with the release of
                             Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                            publishing software like Aldus PageMaker including versions of Lorem Ipsum.`} isCollapseOpen={true}/>
+                            publishing software like Aldus PageMaker including versions of Lorem Ipsum.`} isCollapseOpen={false} />
                     </Col>
                 </Row>
             </Container>
@@ -73,4 +73,4 @@ function Services() {
     )
 };
 
-export default Services;
+export default MPServices;
