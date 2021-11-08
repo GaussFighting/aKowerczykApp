@@ -27,6 +27,13 @@
     <title>React App</title>
   </head>
   <body>
+    <form name="contactForm" netlify netlify-honeypot="bot-field" action="/" hidden>
+      <input type="hidden" name="subject" id="subject" value="Zgłoszenie z formularza kontaktowego"/>
+      <input type="text" name="nameAndSurname"/>
+      <input type="text" name="phone"/>
+      <input type="textarea" name="exampleText"/>
+      <input type="checkbox" name="status"/>
+    </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
