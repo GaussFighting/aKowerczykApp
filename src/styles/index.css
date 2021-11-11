@@ -29,6 +29,13 @@ code {
   min-height: calc(100vh - 168px - 72px);
 }
 
+.top-image {
+  background-repeat: no-repeat;
+  background-position: center 75%;
+  background-size: cover;
+  height: 70vh;
+}
+
 .inner-link {
   color: var(--primary-color);
   text-decoration: none;
@@ -48,6 +55,6 @@ a.color-green {
 @import 'about.css';
 @import 'contact.css';
 @import 'footer.css';
-@import 'MPAbout.css';
+@import 'mpabout.css';
 @import 'contact_form.css';
 @import 'service.css';

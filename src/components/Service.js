@@ -2,9 +2,6 @@ import React, {useState} from 'react';
 import { Collapse, Card, CardBody } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-
-
-
 function Service(props) {
 
     const [isOpen, setIsOpen] = useState(props.isCollapseOpen); 

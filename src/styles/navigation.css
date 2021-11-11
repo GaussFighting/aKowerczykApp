@@ -34,3 +34,9 @@
   background-color: var(--secondary-color);
   color: #fff;
 }
+
+@media only screen and (max-width: 1200px) {
+  .navigation {
+    padding: 16px;
+  }
+}

@@ -15,7 +15,7 @@ function Navigation() {
         <div>
             <Navbar
                 className="navigation"
-                expand="md"
+                expand="xl"
                 fixed="top"
                 full
                 light
