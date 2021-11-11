@@ -41,7 +41,6 @@ function ContactForm() {
 
     e.preventDefault();
   };
-  console.log(nameAndSurnameFieldValue)
   return (
     <div>
       {isSubmitted ? (
