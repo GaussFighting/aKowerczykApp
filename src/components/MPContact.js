@@ -5,7 +5,7 @@ import ContactForm from "./ContactForm";
 function MPAbout() {
     return (
         <div className="container py-5">
-                <NavLink className="inner-link" to="/about"><h1>Kontakt</h1></NavLink>
+                <NavLink className="inner-link" to="/contact"><h1>Kontakt</h1></NavLink>
                 <ContactForm/>
         </div>
     )

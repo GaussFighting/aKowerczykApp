@@ -9,9 +9,9 @@ function MPServices() {
     return (
         <div className="container py-5">
             <NavLink className="inner-link" to="/services"><h1>USŁUGI</h1></NavLink>
-            <Container>
+            <Container fluid>
                 <Row>
-                    <Col>
+                    <Col md={4}>
                         <Service icon={faSearchLocation} title={'POŚREDNICTWO'} description={`Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -20,7 +20,7 @@ function MPServices() {
                             Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
                             publishing software like Aldus PageMaker including versions of Lorem Ipsum.`} isCollapseOpen={false}/>
                     </Col>
-                    <Col>
+                    <Col md={4}>
                         <Service icon={faMarker} title={'NAJEM'} description={`Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -29,7 +29,7 @@ function MPServices() {
                             Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
                             publishing software like Aldus PageMaker including versions of Lorem Ipsum.`} isCollapseOpen={false} />
                     </Col>
-                    <Col>
+                    <Col md={4}>
                         <Service icon={faHouseUser} title={'HOME STAGING'} description={`Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -40,7 +40,7 @@ function MPServices() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col>
+                    <Col md={4}>
                         <Service icon={faSearchLocation} title={'POŚREDNICTWO'} description={`Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -49,7 +49,7 @@ function MPServices() {
                             Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
                             publishing software like Aldus PageMaker including versions of Lorem Ipsum.`} isCollapseOpen={false}/>
                     </Col>
-                    <Col>
+                    <Col md={4}>
                         <Service icon={faMarker} title={'NAJEM'} description={`Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -58,7 +58,7 @@ function MPServices() {
                             Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
                             publishing software like Aldus PageMaker including versions of Lorem Ipsum.`} isCollapseOpen={false} />
                     </Col>
-                    <Col>
+                    <Col md={4}>
                         <Service icon={faHouseUser} title={'HOME STAGING'} description={`Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
