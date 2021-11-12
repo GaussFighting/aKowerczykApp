@@ -9,11 +9,18 @@ function Blog() {
     });
     return (
         <div className="container page-container py-5 ">
-                {allData.map((news) => {
-                    return (<CardColumns>
-                        <NewsBlog id={news.id} src={news.srcMax} title={news.title} data={news.data} description={news.descriptionLong} />
-                        </CardColumns>)
-                })}
+            <h1>BLOG</h1>
+            {allData.map((news) => {
+                return (<CardColumns>
+                    <NewsBlog
+                        id={news.id}
+                        src={news.srcMax}
+                        title={news.title}
+                        data={news.data} 
+                        description={news.descriptionLong} 
+                        position={news.position} />
+                </CardColumns>)
+            })}
         </div>
     )
 };
