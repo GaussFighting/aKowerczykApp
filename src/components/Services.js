@@ -1,6 +1,5 @@
 import React from 'react';
 import TopImage from './TopImage';
-import { NavLink } from 'react-router-dom';
 import Service from './Service';
 import { Container, Row, Col } from 'reactstrap';
 import {
@@ -11,20 +10,15 @@ import {
 import servicesPageImage from '../styles/images/laptop-g930f14b70_1920.jpg'
 
 function Services() {
-  return (
+    return (
     <div>
       <TopImage image={servicesPageImage} position={68} />
-      <div className="container page-container py-5">
-        <NavLink className="inner-link" to="/services">
-          <h1>USŁUGI</h1>
-        </NavLink>
-        <Container>
-          <Row>
-            <Col>
-              <Service
-                icon={faSearchLocation}
-                title={'POŚREDNICTWO'}
-                description={`Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        <div className="container page-container py-5">
+            <h1>USŁUGI</h1>
+            <Container>
+                <Row>
+                    <Col>
+                        <Service icon={faSearchLocation} title={'POŚREDNICTWO'} description={`Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                             It has survived not only five centuries, but also the leap into electronic typesetting,
