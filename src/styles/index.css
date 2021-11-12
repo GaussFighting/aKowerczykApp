@@ -29,6 +29,12 @@ code {
   min-height: calc(100vh - 168px - 72px);
 }
 
+.top-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+}
+
 .inner-link {
   color: var(--primary-color);
   text-decoration: none;
@@ -38,6 +44,12 @@ code {
 }
 a.color-green {
   color: var(--primary-color);
+}
+
+@media only screen and (max-width: 1200px) {
+  .top-image {
+    height: 40vh;
+  }
 }
 
 @import 'navigation.css';
