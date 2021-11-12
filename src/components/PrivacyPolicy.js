@@ -3,7 +3,7 @@ import React from 'react';
 function PrivacyPolicy() {
   return (
     <div className="container py-5">
-      <h1>Polityka prywatności</h1>
+      <h1>POLITYKA PRYWATNOŚCI</h1>
       <h3>I Informacje ogólne</h3>
       <p>1. Zdeklarowana poniej polityka prywatności dotyczy Serwisu zamieszczonego pod adresem url: @@domenaFirmy.com</p>
       <p>2. Administratorem i Operatorem Serwisu jest @@nazwaFirmy, @@NIPfirmy, @@adresFirmy</p>

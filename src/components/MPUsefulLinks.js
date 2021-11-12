@@ -1,14 +1,22 @@
 import React from 'react';
+import { faCalculator } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function MPUsefulLinks() {
   return (
     <div className="container py-5">
       <h1>PRZYDATNE LINKI</h1>
-      <ul>
+      <ul className="list-unstyled">
         <li>
           <div>
-            <a href="http://www.kalkulatornotarialny.pl/" className="inner-link">
-              Kalkulator opłat notarialnych
+            <a
+              href="http://www.kalkulatornotarialny.pl/"
+              className="inner-link"
+            >
+              <FontAwesomeIcon icon={faCalculator} size="2x" />{' '}
+              <span className="useful-link">
+                Kalkulator opłat notarialnych{' '}
+              </span>
             </a>
           </div>
           <div>
@@ -22,7 +30,10 @@ function MPUsefulLinks() {
         <li>
           <div>
             <a href="https://www.kalkulatorkredytu.com/" className="inner-link">
-              Kalkulator kredytu hipotecznego
+              <FontAwesomeIcon icon={faCalculator} size="2x" />{' '}
+              <span className="useful-link">
+                Kalkulator kredytu hipotecznego
+              </span>
             </a>
           </div>
           <div>

@@ -29,6 +29,15 @@ code {
   min-height: calc(100vh - 168px - 72px);
 }
 
+.logo {
+  height: 55px;
+  padding-left: 30px;
+}
+
+.logo-footer {
+  height: 95px;
+}
+
 .top-image {
   background-repeat: no-repeat;
   background-size: cover;
