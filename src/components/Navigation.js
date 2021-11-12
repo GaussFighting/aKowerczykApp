@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { Navbar, NavbarBrand, NavbarToggler, Collapse, Nav, NavItem } from 'reactstrap';
 import { NavLink } from "react-router-dom";
-
+import logo from '../styles/images/logo.png'
 
 function Navigation() {  
     
@@ -21,7 +21,7 @@ function Navigation() {
                 light
             >
                 <NavbarBrand href="/">
-                    LOGO
+                    <img src={logo} alt="logo" className="logo"/>
                 </NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
@@ -51,7 +51,7 @@ function Navigation() {
                         </NavItem>
                         <NavItem >
                             <NavLink className="nav-link pl-4" to="/about">
-                                O NAS
+                                O FIRMIE
                             </NavLink>
                         </NavItem>
                         <NavItem >

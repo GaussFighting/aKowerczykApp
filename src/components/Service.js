@@ -16,7 +16,7 @@ function Service(props) {
             <h3 className="service-title">{props.title}</h3></div>
             <Collapse isOpen={isOpen}>
                 <Card>
-                    <CardBody>
+                    <CardBody className="shadow">
                         {props.description}
                     </CardBody>
                 </Card>

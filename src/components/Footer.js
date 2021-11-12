@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { NavLink } from "react-router-dom";
 import SocialMedia from './SocialMedia';
-
+import logo from '../styles/images/logo.png'
 
 function Footer() {
 
@@ -14,7 +14,7 @@ function Footer() {
         <div>
             <Container className="footer-container mw-100">
                 <Row>
-                    <Col className="align-self-center text-center">SZAŁAS.JPG</Col>
+                    <Col className="align-self-center text-center"><img src={logo} alt="logo" className="logo-footer"/></Col>
                     <Col className="py-3">
                         <NavLink className="fw-bold pb-2 footer-contact" to="/contact">
                             KONTAKT

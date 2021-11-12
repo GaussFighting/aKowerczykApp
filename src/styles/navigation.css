@@ -1,5 +1,6 @@
 .navigation {
   background-color: var(--primary-color);
+  box-shadow: 0 1px 6px 0 #666666;
 }
 .navbar {
   padding: 0px;
@@ -13,6 +14,9 @@
 }
 .nav-link {
   padding: 1.5rem 4rem 1.5rem 4rem !important;
+}
+.nav-link.active {
+  background-color: var(--secondary-color);
 }
 .navbar-light .navbar-nav .nav-link {
   color: #fff;
