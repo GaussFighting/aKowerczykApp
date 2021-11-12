@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
 import Service from './Service';
 import { Container, Row, Col } from 'reactstrap';
 import { faSearchLocation, faMarker, faHouseUser } from '@fortawesome/free-solid-svg-icons';
@@ -8,7 +7,7 @@ import { faSearchLocation, faMarker, faHouseUser } from '@fortawesome/free-solid
 function Services() {
     return (
         <div className="container page-container py-5">
-            <NavLink className="inner-link" to="/services"><h1>USŁUGI</h1></NavLink>
+            <h1>USŁUGI</h1>
             <Container>
                 <Row>
                     <Col>

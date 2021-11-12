@@ -1,20 +1,21 @@
 import React from 'react';
-import { Card, CardImg, CardBody, CardTitle, CardSubtitle, CardText, } from 'reactstrap';
+import { Card, CardBody, CardTitle, CardSubtitle, CardText, } from 'reactstrap';
 
 
 
 function NewsBlog(props) {
     return (
-        <div id={props.id}>
+        <div className="mb-5 shadow" id={props.id}>
             <Card>
-                <CardImg
-                    alt=""
-                    src={props.src}
-                    top
-                    width="100%"
-                />
+                <div 
+                className="blogImgCenter" alt=""
+                style={{
+                    backgroundImage: `url(${props.src})`,
+                    backgroundPosition: `center ${props.position}%`,
+                  }}>
+                </div>
                 <CardBody>
-                    <CardTitle tag="h5" >
+                    <CardTitle className="py-1" tag="h2" >
                         {props.title}
                     </CardTitle>
                     <CardSubtitle
