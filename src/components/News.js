@@ -7,7 +7,7 @@ import { HashLink as Link} from 'react-router-hash-link';
 
 function News(props) {
     return (
-        <div className="shadow">
+        <div className="shadow mb-5">
             <Card >
                 <CardImg top width="100%" src={props.src} alt="Card image cap" />
                 <CardBody>

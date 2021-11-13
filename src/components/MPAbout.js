@@ -4,7 +4,7 @@ import SocialMedia from "./SocialMedia";
 
 function MPAbout() {
     return (
-        <div className="container py-5">
+        <div className="container pb-5">
                 <NavLink className="inner-link" to="/about"><h1>O FIRMIE</h1></NavLink>
 
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 

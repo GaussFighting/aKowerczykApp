@@ -1,14 +1,8 @@
 import React from 'react';
-
 import { NavLink } from "react-router-dom";
 import { Container, Row, Col } from 'reactstrap';
 import data from '../data/news.json';
-
 import News from './News';
-
-
-
-
 
 function MPNews() {
     const sortedItems = data.news.sort((a, b) => {
@@ -20,7 +14,7 @@ function MPNews() {
     }
     );
     return (
-        <div className="container py-5">
+        <div className="container pb-5">
             <NavLink className="inner-link" to="/blog"><h1>NEWSY</h1></NavLink>
             <Container>
                 <Row>
