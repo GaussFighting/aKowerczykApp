@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm";
 
 function MPContact() {
     return (
-        <div className="container py-5">
+        <div className="container pb-5">
                 <NavLink className="inner-link" to="/contact"><h1>KONTAKT</h1></NavLink>
                 <ContactForm/>
         </div>
