@@ -2,9 +2,6 @@ import React from 'react';
 import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
 import { HashLink as Link} from 'react-router-hash-link';
 
-
-
-
 function News(props) {
     return (
         <div className="shadow">

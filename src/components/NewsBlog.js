@@ -1,8 +1,6 @@
 import React from 'react';
 import { Card, CardBody, CardTitle, CardSubtitle, CardText, } from 'reactstrap';
 
-
-
 function NewsBlog(props) {
     return (
         <div className="mb-5 shadow" id={props.id}>
