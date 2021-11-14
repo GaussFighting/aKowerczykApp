@@ -2,6 +2,7 @@ import React from 'react';
 import SocialMedia from './SocialMedia';
 import TopImage from './TopImage';
 import aboutPageImage from '../styles/images/poland-gfc372c5c7_1920.jpg';
+import Certificates from './Certifacates'
 
 function About() {
   return (
@@ -35,6 +36,7 @@ function About() {
         </p>
 
         <SocialMedia color="color-green" />
+        <Certificates />
       </div>
     </div>
   );
