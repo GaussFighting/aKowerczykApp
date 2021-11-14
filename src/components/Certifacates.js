@@ -11,20 +11,24 @@ import {
 function Certificates() {
   const certificateImagesArray = [
     {
+      id: 1,
       src: certificateImage1,
-      position: '100',
+      position: '0',
     },
     {
+      id: 2,
       src: certificateImage2,
-      position: '100',
+      position: '0',
     },
     {
+      id: 3,
       src: certificateImage1,
-      position: '100',
+      position: '0',
     },
     {
+      id: 4,
       src: certificateImage2,
-      position: '100',
+      position: '0',
     },
   ];
 
@@ -56,9 +60,9 @@ function Certificates() {
     setActiveIndex(newIndex);
   };
 
-  const slides = certificateImagesArray.map((item, idx) => {
+  const slides = certificateImagesArray.map((item) => {
     return (
-      <CarouselItem onExiting={onExiting} onExited={onExited} key={item.src + idx}>
+      <CarouselItem onExiting={onExiting} onExited={onExited} key={item.id}>
         <div
           className="certificate-images"
           style={{
