@@ -4,14 +4,16 @@ import MPContact from './MPContact';
 import MPAbout from './MPAbout';
 import MPOffers from './MPOffers';
 import MPServices from './MPServices';
-import MPUsefulLinks from "./MPUsefulLinks"
+import MPUsefulLinks from './MPUsefulLinks';
 import MPNews from './MPNews';
-import mainPageImage from '../styles/images//living-room.jpg'
+import mainPageImage from '../styles/images//living-room.jpg';
 
 function MainPage() {
+
     return (
         <div>
             <TopImage image={mainPageImage} position={78}/>
+            <div className="py-5">
             <MPAbout/>
             <MPServices/>
             <MPOffers />
@@ -19,7 +21,9 @@ function MainPage() {
             <MPUsefulLinks/>
             <MPContact/>
         </div>
+      </div>
     )
 };
+
 
 export default MainPage;

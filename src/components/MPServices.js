@@ -7,7 +7,7 @@ import { faSearchLocation, faMarker, faHouseUser } from '@fortawesome/free-solid
 
 function MPServices() {
     return (
-        <div className="container py-5">
+        <div className="container pb-5">
             <NavLink className="inner-link" to="/services"><h1>USŁUGI</h1></NavLink>
             <Container fluid>
                 <Row>
