@@ -1,32 +1,13 @@
 import React, { useState } from 'react';
-import { Carousel, CarouselIndicators, CarouselItem, CarouselCaption, CarouselControl } from 'reactstrap';
+import { Carousel, CarouselIndicators, CarouselItem, CarouselControl } from 'reactstrap';
 import { Card, CardBody, CardTitle, CardSubtitle, CardText, } from 'reactstrap';
+import { HashLink as Link } from 'react-router-hash-link';
 
-
-const items = [
-    {
-        src: 'https://picsum.photos/id/237/1296/500',
-        position: '100',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-    {
-        src: 'https://picsum.photos/id/236/1296/500',
-        position: '100',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-    {
-        src: 'https://picsum.photos/id/235/1296/500',
-        position: '100',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    }
-];
-
-
-
-function Offer() {
+function Offer(props) {
 
     const [activeIndex, setActiveIndex] = useState(0)
-    console.log(activeIndex)
+
+
     let animating = false;
 
     const onExiting = () => {
@@ -37,13 +18,15 @@ function Offer() {
     }
     const next = () => {
         if (animating) return;
-        const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
+
+        const nextIndex = activeIndex === props.carouselImages.length - 1 ? 0 : activeIndex + 1;
         setActiveIndex(nextIndex);
     }
 
     const previous = () => {
         if (animating) return;
-        const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
+
+        const nextIndex = activeIndex === 0 ? props.carouselImages.length - 1 : activeIndex - 1;
         setActiveIndex(nextIndex);
     }
 
@@ -51,8 +34,7 @@ function Offer() {
         if (animating) return;
         setActiveIndex(newIndex);
     }
-
-    const slides = items.map((item) => {
+    const slides = props.carouselImages.map((item) => {
         return (
             <CarouselItem
                 onExiting={onExiting}
@@ -63,26 +45,33 @@ function Offer() {
                     style={{
                         backgroundImage: `url(${item.src})`,
                         backgroundPosition: `center ${item.position}%`,
-                        }}
-                     />
+                    }}
+                />
             </CarouselItem>
         );
     });
     return (
-        <div><Carousel
+        <div className="shadow mb-5"><Carousel
             activeIndex={activeIndex}
             next={next}
             previous={previous}
         >
-            <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
+            <CarouselIndicators items={props.carouselImages} activeIndex={activeIndex} onClickHandler={goToIndex} />
             {slides}
             <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
             <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
         </Carousel>
-            <div>
-            {items[0].description}
-
-            </div>
+            {props.title && (<div>
+                <Card>
+                    <CardBody>
+                        <CardTitle>
+                            <Link className="inner-link" to={`/offer/${props.id}`}><h4>{props.title}</h4></Link>
+                        </CardTitle>
+                        <CardSubtitle>{props.data}</CardSubtitle>
+                        <CardText> {props.description}</CardText>
+                    </CardBody>
+                </Card>
+            </div>)}
         </div>
     );
 }

@@ -7,29 +7,25 @@ import offers from "../data/offers.json";
 
 function MPOffers() {
         const sortedItems = offers.offers.sort((a, b) => {
-            return a.offers > b.offers ? -1 : 1
+            return a.date > b.date ? -1 : 1
         });
-        console.log(sortedItems, "asd")
-
         const selectedItems = sortedItems.filter((item, idx) => {
             return idx < 3;
         }
         );
-        console.log(selectedItems)
-
     return (
-        <div className="container py-5">
+        <div className="container pb-5">
             <NavLink className="inner-link" to="/offers"><h1>OFERTY</h1></NavLink>
                        <Container>
                 <Row>
                     {selectedItems.map((offer) => {
                         return (<Col md={4}>
-                            <Offer />
+                            <Offer key={offer.id} id={offer.id} title={offer.title} date={offer.date} description={offer.description} carouselImages={offer.photos} />
                         </Col>)
                     })}
                 </Row>
             </Container>
-        </div>
+        </div>   
     )
 };
 

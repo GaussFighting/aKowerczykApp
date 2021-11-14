@@ -10,19 +10,20 @@ import MPCertificates from './MPCertificates';
 import mainPageImage from '../styles/images//living-room.jpg';
 
 function MainPage() {
+
     return (
         <div>
             <TopImage image={mainPageImage} position={78}/>
             <div className="py-5">
-              <MPAbout/>
-              <MPServices/>
-              <MPOffers />
-              <MPNews/>
-              <MPUsefulLinks/>
-              <MPCertificates />
-              <MPContact/>
-            </div>
+            <MPAbout/>
+            <MPServices/>
+            <MPOffers />
+            <MPNews/>
+            <MPUsefulLinks/>
+            <MPCertificates />
+            <MPContact/>
         </div>
+      </div>
     )
 };
 
