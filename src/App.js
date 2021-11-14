@@ -14,6 +14,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import PrivacyPolicy from './components/PrivacyPolicy';
+import OfferPage from './components/OfferPage';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/about" element={<About />}/>
           <Route path="/contact" element={<Contact />}/>
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/offer/:id" element={<OfferPage/>}/>
           <Route path="/" element={<MainPage />}/>
         </Routes>
         <Footer />
