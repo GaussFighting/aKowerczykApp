@@ -7,6 +7,7 @@ function Offer(props) {
 
     const [activeIndex, setActiveIndex] = useState(0)
 
+
     let animating = false;
 
     const onExiting = () => {
@@ -17,12 +18,14 @@ function Offer(props) {
     }
     const next = () => {
         if (animating) return;
+
         const nextIndex = activeIndex === props.carouselImages.length - 1 ? 0 : activeIndex + 1;
         setActiveIndex(nextIndex);
     }
 
     const previous = () => {
         if (animating) return;
+
         const nextIndex = activeIndex === 0 ? props.carouselImages.length - 1 : activeIndex - 1;
         setActiveIndex(nextIndex);
     }
@@ -31,7 +34,6 @@ function Offer(props) {
         if (animating) return;
         setActiveIndex(newIndex);
     }
-
     const slides = props.carouselImages.map((item) => {
         return (
             <CarouselItem

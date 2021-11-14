@@ -16,7 +16,6 @@ function MPAbout() {
                 publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                 
                 <SocialMedia color="color-green"/>
-
         </div>
     )
 };

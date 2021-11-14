@@ -6,6 +6,7 @@ import MPOffers from './MPOffers';
 import MPServices from './MPServices';
 import MPUsefulLinks from './MPUsefulLinks';
 import MPNews from './MPNews';
+import MPCertificates from './MPCertificates';
 import mainPageImage from '../styles/images//living-room.jpg';
 
 function MainPage() {
@@ -19,11 +20,11 @@ function MainPage() {
             <MPOffers />
             <MPNews/>
             <MPUsefulLinks/>
+            <MPCertificates />
             <MPContact/>
         </div>
       </div>
     )
 };
-
 
 export default MainPage;
