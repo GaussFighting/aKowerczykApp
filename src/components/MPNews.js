@@ -19,7 +19,7 @@ function MPNews() {
             <Container>
                 <Row>
                     {selectedItems.map((news) => {
-                        return (<Col md={4}>
+                        return (<Col md={4} key={news.id}>
                             <News id={news.id} src={news.srcMin} title={news.title} data={news.data} description={news.descriptionShort} />
                         </Col>)
                     })}

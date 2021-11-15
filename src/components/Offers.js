@@ -1,11 +1,19 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import TopImage from './TopImage';
 import Offer from './Offer';
 import offersPageImage from '../styles/images/interior-design-g8903eca74_1920.jpg';
 import offers from '../data/offers.json';
 
-function Offers(offer) {
+function Offers() {
+
+  useEffect(() => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}, []);
+
   const allItems = offers.offers.sort((a, b) => {
     return a.date > b.date ? -1 : 1
   });
