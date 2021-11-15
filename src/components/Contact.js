@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import TopImage from './TopImage';
 import ContactForm from './ContactForm';
 import { faEnvelope, faPhoneSquare } from '@fortawesome/free-solid-svg-icons';
@@ -6,6 +6,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import contactPageImage from '../styles/images/smartphone-g5db46a158_1920.jpg';
 
 function Contact() {
+  
+  useEffect(() => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}, []);
+
   return (
     <div>
       <TopImage image={contactPageImage} position={58} />
