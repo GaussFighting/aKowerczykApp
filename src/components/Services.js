@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import TopImage from './TopImage';
 import Service from './Service';
 import { Container, Row, Col } from 'reactstrap';
@@ -10,6 +10,14 @@ import {
 import servicesPageImage from '../styles/images/laptop-g930f14b70_1920.jpg';
 
 function Services() {
+
+  useEffect(() => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}, []);
+
   return (
     <div>
       <TopImage image={servicesPageImage} position={68} />

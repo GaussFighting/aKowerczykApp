@@ -1,10 +1,18 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import SocialMedia from './SocialMedia';
 import TopImage from './TopImage';
 import aboutPageImage from '../styles/images/poland-gfc372c5c7_1920.jpg';
 import Certificates from './Certifacates'
 
 function About() {
+
+  useEffect(() => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}, []);
+
   return (
     <div>
       <TopImage image={aboutPageImage} position={88} />

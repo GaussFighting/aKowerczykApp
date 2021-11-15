@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import TopImage from './TopImage';
 import { CardColumns } from 'reactstrap';
 import data from '../data/news.json';
@@ -6,6 +6,14 @@ import NewsBlog from './NewsBlog';
 import blogPageImage from '../styles/images/desk-g42426e823_1920.jpg';
 
 function Blog() {
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }, []);
+
     const allData = data.news.sort((a, b) => {
         return a.data > b.data ? -1 : 1
     });

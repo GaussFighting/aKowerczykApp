@@ -19,8 +19,8 @@ function MPOffers() {
                        <Container>
                 <Row>
                     {selectedItems.map((offer) => {
-                        return (<Col md={4}>
-                            <Offer key={offer.id} id={offer.id} title={offer.title} date={offer.date} description={offer.description} carouselImages={offer.photos} />
+                        return (<Col md={4} key={offer.id}>
+                            <Offer  id={offer.id} title={offer.title} date={offer.date} description={offer.description} carouselImages={offer.photos} />
                         </Col>)
                     })}
                 </Row>
