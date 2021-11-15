@@ -1,10 +1,17 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { useParams } from "react-router-dom";
 import offers from '../data/offers.json';
 import { Card, CardBody, CardTitle, CardSubtitle, CardText, } from 'reactstrap';
 import Offer from './Offer';
 
 function OfferPage() {
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }, []);
 
     let { id } = useParams();
 

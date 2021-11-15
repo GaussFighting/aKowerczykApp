@@ -1,6 +1,14 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 function PrivacyPolicy() {
+
+  useEffect(() => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}, []);
+
   return (
     <div className="container py-5">
       <h1>POLITYKA PRYWATNOŚCI</h1>
