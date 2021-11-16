@@ -51,6 +51,7 @@ function ContactForm() {
         <div>
           <h3>Dane do kontaktu:</h3>
           <AvForm
+            id="contactForm"
             name="contactForm"
             method="post"
             data-netlify="true"
