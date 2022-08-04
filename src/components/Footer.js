@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import { NavLink } from "react-router-dom";
 import SocialMedia from "./SocialMedia";
-import logo from "../styles/images/logo.png";
+// import logo from "../styles/images/logo.png";
 import logo2 from "../styles/images/logo2.png";
 
 function Footer() {
