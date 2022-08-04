@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import { NavLink } from "react-router-dom";
 import SocialMedia from "./SocialMedia";
-import logo from "../styles/images/logo.png";
+// import logo from "../styles/images/logo.png";
 import logo2 from "../styles/images/logo2.png";
 
 function Footer() {
@@ -25,8 +25,8 @@ function Footer() {
             <NavLink className="fw-bold pb-2 footer-contact" to="/contact">
               KONTAKT
             </NavLink>
-            <div> telefon: 695 606 006 </div>
-            <div> e-mail: akower@poczta.onet.pl </div>
+            <div> telefon: +48 695 606 006 </div>
+            <div> e-mail: naknieruchomosci@gmail.com </div>
             <div className="pt-2">
               <NavLink
                 className="fw-bold pb-2 footer-contact"

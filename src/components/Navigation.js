@@ -8,7 +8,7 @@ import {
   NavItem,
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
-import logo from "../styles/images/logo.png";
+// import logo from "../styles/images/logo.png";
 import logo2 from "../styles/images/logo2.png";
 
 function Navigation() {
