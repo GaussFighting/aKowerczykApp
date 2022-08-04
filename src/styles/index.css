@@ -1,21 +1,73 @@
-@font-face{
+@font-face {
   font-family: mainfont;
   src: url(./fonts/WorkSans-VariableFont_wght.ttf);
 }
 
 body {
   margin: 0;
-  font-family: mainfont, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: mainfont, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f3f2f2;
+
+  --primary-color: #519405;
+  --secondary-color: #03633b;
+
+  --primary-bg-color: #f3f2f2;
+  --secondary-bg-color: #c8c8c8;
+
+  background-color: var(--primary-bg-color);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.page-container {
+  min-height: calc(100vh - 168px - 72px);
+}
+
+.logo {
+  height: 55px;
+  padding-left: 30px;
+}
+
+.logo2 {
+  height: 65px;
+  padding-left: 30px;
+}
+
+.logo-footer {
+  height: 95px;
+}
+
+.logo-footer2 {
+  height: 155px;
+}
+
+.top-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+}
+
+.inner-link {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.inner-link:hover {
+  color: var(--secondary-color);
+}
+a.color-green {
+  color: var(--primary-color);
+}
+
+@media only screen and (max-width: 1200px) {
+  .top-image {
+    height: 40vh;
+  }
 }
 
 @import "navigation.css";
@@ -26,3 +78,9 @@ code {
 @import "about.css";
 @import "contact.css";
 @import "footer.css";
+@import "mpabout.css";
+@import "contact_form.css";
+@import "service.css";
+@import "newsblog.css";
+@import "offer.css";
+@import "certificates.css";

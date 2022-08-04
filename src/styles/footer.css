@@ -1,20 +1,21 @@
-.footer-container{
-    background-color: #519405;
-    color: #fff;
+.footer-container {
+  background-color: var(--primary-color);
+  box-shadow: 0 1px 6px 0 #666666;
+  color: #fff;
 }
-a.footer-contact{
-    color: #fff;
-    text-decoration: none;
+a.footer-contact {
+  color: #fff;
+  text-decoration: none;
 }
-a.footer-contact:hover{
-    color: #f3b304;
-    text-decoration: none;
+a.footer-contact:hover {
+  color: var(--secondary-color);
+  text-decoration: none;
 }
-a.socialmedia-icon{
-    color: #fff;
-    text-decoration: none;
+a.socialmedia-icon {
+  color: #fff;
+  text-decoration: none;
 }
-a.socialmedia-icon:hover{
-    color: #f3b304;
-    text-decoration: none;
+a.socialmedia-icon:hover {
+  color: var(--secondary-color);
+  text-decoration: none;
 }
