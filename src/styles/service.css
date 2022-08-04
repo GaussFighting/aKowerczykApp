@@ -1,10 +1,16 @@
-h3.service-title{
-    display: inline;
+h3.service-title {
+  display: inline;
 }
 .service-icon {
-    color: var(--primary-color);
-  }
+  color: var(--primary-color);
+  height: 150px;
+  text-align: center;
+}
 .service-icon:hover {
-    color: var(--secondary-color);
-  }
-  
+  color: var(--secondary-color);
+}
+
+.service-description {
+  text-align: justify;
+  min-height: 280px;
+}

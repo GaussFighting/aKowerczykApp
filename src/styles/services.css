@@ -1,0 +1,7 @@
+.services-row {
+  display: flex;
+}
+.services-col {
+  display: 1;
+  padding: 1rem;
+}
