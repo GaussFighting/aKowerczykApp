@@ -5,8 +5,8 @@
 
 body {
   margin: 0;
-  font-family: mainfont, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: mainfont, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -21,7 +21,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -34,8 +34,17 @@ code {
   padding-left: 30px;
 }
 
+.logo2 {
+  height: 65px;
+  padding-left: 30px;
+}
+
 .logo-footer {
   height: 95px;
+}
+
+.logo-footer2 {
+  height: 155px;
 }
 
 .top-image {
@@ -61,18 +70,17 @@ a.color-green {
   }
 }
 
-@import 'navigation.css';
-@import 'mainpage.css';
-@import 'services.css';
-@import 'blog.css';
-@import 'offers.css';
-@import 'about.css';
-@import 'contact.css';
-@import 'footer.css';
-@import 'mpabout.css';
-@import 'contact_form.css';
-@import 'service.css';
-@import 'newsblog.css';
-@import 'offer.css';
-@import 'certificates.css';
-
+@import "navigation.css";
+@import "mainpage.css";
+@import "services.css";
+@import "blog.css";
+@import "offers.css";
+@import "about.css";
+@import "contact.css";
+@import "footer.css";
+@import "mpabout.css";
+@import "contact_form.css";
+@import "service.css";
+@import "newsblog.css";
+@import "offer.css";
+@import "certificates.css";

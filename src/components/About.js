@@ -1,17 +1,16 @@
-import React, {useEffect} from 'react';
-import SocialMedia from './SocialMedia';
-import TopImage from './TopImage';
-import aboutPageImage from '../styles/images/poland-gfc372c5c7_1920.jpg';
-import Certificates from './Certifacates'
+import React, { useEffect } from "react";
+import SocialMedia from "./SocialMedia";
+import TopImage from "./TopImage";
+import aboutPageImage from "../styles/images/poland-gfc372c5c7_1920.jpg";
+import Certificates from "./Certifacates";
 
 function About() {
-
   useEffect(() => {
     window.scrollTo({
-        top: 0,
-        behavior: "smooth"
+      top: 0,
+      behavior: "smooth",
     });
-}, []);
+  }, []);
 
   return (
     <div>
@@ -20,28 +19,75 @@ function About() {
         <h1>O FIRMIE</h1>
 
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          NAK Nieruchomości to firma założona przez Agatę Kowerczyk działająca
+          na rynku nieruchomości od 1992r. Oferuje wsparcie i doradztwo w
+          zakresie kompleksowych usług na rynku nieruchomości.
         </p>
 
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          Klienci firmy mogą liczyć na rzetelność każdej prowadzonej sprawy ,
+          zaangażowanie i ułatwienie poruszania się na rynku nieruchomości.
         </p>
+
+        <p>
+          NAK Nieruchomości to pomoc w analizie stanu prawnego nieruchomości,
+          badaniach ksiąg wieczystych i dokumentów planistycznych, analizie
+          możliwości zagospodarowania nieruchomości, ustanawianiu służebności
+          przesyłu .
+        </p>
+
+        <ul>
+          <li>
+            {" "}
+            Nie radzisz sobie z zawiłościami dokumentów, potrzebujesz sprawdzić
+            księgę wieczysta?
+          </li>
+          <li>
+            {" "}
+            Potrzebujesz złożyć wniosek do ksiąg wieczystych, przygotować umowę
+            przedwstępną, pozyskać mapy geodezyjne, sprawdzić plan
+            zagospodarowania?
+          </li>
+          <li> Otrzymałeś spadek i nie wiesz co dalej?</li>
+          <li> Chcesz wynająć lub sprzedać mieszkanie, nieruchomość?</li>
+          <li> Potrzebujesz wyceny?</li>
+          <li> Potrzebujesz opinii, ekspertyzy, badania rynku?</li>
+        </ul>
+
+        <p>
+          Firma NAK Nieruchomości pomoże w każdej z tych spraw i wielu innych.
+          Doradztwo i pomoc to główny cel mojej działalności. Usługi świadczymy
+          na terenie całej Polski z dużą wnikliwością i dbałością o klienta i
+          nieruchomości.
+        </p>
+
+        <p>
+          Współpracujemy ściśle z rzeczoznawcami majątkowymi, pośrednikami,
+          zarządcami nieruchomości , brokerami finansowymi, geodetami,
+          notariuszami, doradcami kredytowymi, architektami wnętrz i krajobrazu.
+          Swoją działalność na rynku nieruchomości rozpoczęłam w 1992r.
+          zdobywając doświadczenie jako pośrednik, zarządca, pracując w
+          spółdzielni mieszkaniowej, firmie developerskiej oraz zajmując się
+          służebnościami przesyły w przedsiębiorstwie energetycznym.{" "}
+        </p>
+
+        <p>
+          Obecnie świadczę usługi jako NAK Nieruchomości rozwiązując problemy i
+          dylematy moich klientów.
+        </p>
+
+        <p>
+          Posiadam licencje pośrednika oraz zarządcy nieruchomości wymagane
+          jeszcze przed deregulacją zawodów. Posiadam doświadczenie we
+          wszystkich aspektach obsługi nieruchomości, dlatego jestem w stanie
+          zaoferować Państwu kompleksową obsługę.
+        </p>
+
+        <p>Zapraszamy Państwa do nawiązania współpracy.</p>
+
+        <p>Agata Kowerczyk</p>
+
+        <p>Doradca ds. nieruchomości</p>
 
         <SocialMedia color="color-green" />
         <Certificates />
