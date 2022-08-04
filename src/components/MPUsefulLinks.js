@@ -11,6 +11,8 @@ function MPUsefulLinks() {
           <div>
             <a
               href="http://www.kalkulatornotarialny.pl/"
+              target="_blank"
+              rel="noreferrer"
               className="inner-link"
             >
               <FontAwesomeIcon icon={faCalculator} size="2x" />{" "}
@@ -20,16 +22,17 @@ function MPUsefulLinks() {
             </a>
           </div>
           <div>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s
-            </p>
+            <p>KOCHAM SYNOWĄ !!!!!!!!!!!!!!!!!</p>
           </div>
         </li>
         <li>
           <div>
-            <a href="https://www.kalkulatorkredytu.com/" className="inner-link">
+            <a
+              href="https://www.kalkulatorkredytu.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="inner-link"
+            >
               <FontAwesomeIcon icon={faCalculator} size="2x" />{" "}
               <span className="useful-link">
                 Kalkulator kredytu hipotecznego
@@ -49,6 +52,8 @@ function MPUsefulLinks() {
             <a
               href="https://ekw.ms.gov.pl/eukw_ogol/menu.do"
               className="inner-link"
+              target="_blank"
+              rel="noreferrer"
             >
               <FontAwesomeIcon icon={faCalculator} size="2x" />{" "}
               <span className="useful-link">Księgi wieczyste</span>
@@ -67,6 +72,8 @@ function MPUsefulLinks() {
             <a
               href="https://wms.zgkikm.wroc.pl/#/giportal"
               className="inner-link"
+              target="_blank"
+              rel="noreferrer"
             >
               <FontAwesomeIcon icon={faCalculator} size="2x" />{" "}
               <span className="useful-link">ZGKiKM</span>
@@ -82,7 +89,12 @@ function MPUsefulLinks() {
         </li>
         <li>
           <div>
-            <a href="https://wrosip.pl/" className="inner-link">
+            <a
+              href="https://wrosip.pl/"
+              className="inner-link"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FontAwesomeIcon icon={faCalculator} size="2x" />{" "}
               <span className="useful-link">WROSIP</span>
             </a>
@@ -97,7 +109,12 @@ function MPUsefulLinks() {
         </li>
         <li>
           <div>
-            <a href="https://isap.sejm.gov.pl/" className="inner-link">
+            <a
+              href="https://isap.sejm.gov.pl/"
+              className="inner-link"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FontAwesomeIcon icon={faCalculator} size="2x" />{" "}
               <span className="useful-link">
                 Internetowy System Aktów Prawnych
@@ -114,7 +131,12 @@ function MPUsefulLinks() {
         </li>
         <li>
           <div>
-            <a href="https://stat.gov.pl/" className="inner-link">
+            <a
+              href="https://stat.gov.pl/"
+              className="inner-link"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FontAwesomeIcon icon={faCalculator} size="2x" />{" "}
               <span className="useful-link">Główny Urząd Statystyczny</span>
             </a>
@@ -132,6 +154,8 @@ function MPUsefulLinks() {
             <a
               href="https://www.gov.pl/web/rozwoj-technologia"
               className="inner-link"
+              target="_blank"
+              rel="noreferrer"
             >
               <FontAwesomeIcon icon={faCalculator} size="2x" />{" "}
               <span className="useful-link">
@@ -152,6 +176,8 @@ function MPUsefulLinks() {
             <a
               href="https://mapy.geoportal.gov.pl/imap/Imgp_2.html"
               className="inner-link"
+              target="_blank"
+              rel="noreferrer"
             >
               <FontAwesomeIcon icon={faCalculator} size="2x" />{" "}
               <span className="useful-link">GEOPORTAL</span>
@@ -167,7 +193,12 @@ function MPUsefulLinks() {
         </li>
         <li>
           <div>
-            <a href="http://www.ekoportal.gov.pl/" className="inner-link">
+            <a
+              href="http://www.ekoportal.gov.pl/"
+              className="inner-link"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FontAwesomeIcon icon={faCalculator} size="2x" />{" "}
               <span className="useful-link">EKOPORTAL</span>
             </a>
@@ -182,7 +213,12 @@ function MPUsefulLinks() {
         </li>
         <li>
           <div>
-            <a href="https://www.podatki.gov.pl/" className="inner-link">
+            <a
+              href="https://www.podatki.gov.pl/"
+              className="inner-link"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FontAwesomeIcon icon={faCalculator} size="2x" />{" "}
               <span className="useful-link">Podatki</span>
             </a>
