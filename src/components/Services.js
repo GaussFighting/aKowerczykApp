@@ -27,7 +27,7 @@ function Services() {
             <Col md={4} className="services-col">
               <Service
                 icon={faSearchLocation}
-                title={"DORADZTW0  I WERYFIKACJA STANU PRAWNEGO"}
+                title={"DORADZTWO"}
                 description={`Nie musisz znać się na skomplikowanych aspektach prawnych obrotu nieruchomości. 
                 Weryfikacja dokumentów, analiza stanu prawnego, przygotowanie wniosków do ksiąg wieczystych, Katastru, pozyskiwanie brakujących dokumentów, przygotowywanie projektów umów, przedwstępnych, przyrzeczonych, najmu, analiza i ekspertyzy dotyczące miejscowych planów zagospodarowania przestrzennego to moja codzienność. Aktualizacja wpisów w KW i EGiB
                 Rzetelność usług  to priorytet. Twój czas jest cenny.
@@ -38,7 +38,7 @@ function Services() {
             <Col md={4} className="services-col">
               <Service
                 icon={faMarker}
-                title={"HOMESTAGING"}
+                title={"HOME STAGING"}
                 description={`Chcesz sprzedać mieszkanie lub dom? Zastanawiasz się jak najlepiej ulokować fundusze? 
                 Każda nieruchomość wymaga przygotowania. Aranżacja powierzchni ma wpływ na zysk ze sprzedaży lub najmu. Wybór nieruchomości i sposób jej przedstawienia potencjalnym  klientom to szybszy zysk.
                 Podniesienie atrakcyjności domu lub mieszkania przyśpiesza zawarcie umowy.
@@ -60,7 +60,7 @@ function Services() {
             <Col md={4} className="services-col">
               <Service
                 icon={faSearchLocation}
-                title={"OFERTA DLA DEWELOPERÓW"}
+                title={"DLA DEWELOPERÓW"}
                 description={``}
                 points={[
                   "Analizy możliwości zagospodarowania",
