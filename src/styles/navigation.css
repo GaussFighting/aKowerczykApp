@@ -13,7 +13,7 @@
   padding-left: 0px;
 }
 .nav-link {
-  padding: 1.5rem 4rem 1.5rem 4rem !important;
+  padding: 4.406359rem !important;
 }
 .nav-link.active {
   background-color: var(--secondary-color);
@@ -41,6 +41,9 @@
 
 @media only screen and (max-width: 1200px) {
   .navigation {
-    padding: 16px;
+    padding: -2px;
+  }
+  .nav-link {
+    padding: 2rem !important;
   }
 }

@@ -1,11 +1,12 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+// import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 
 function SocialMedia(props) {
   return (
     <div>
-      <span>
+      {/* <span>
         <a
           className={`socialmedia-icon ${props.color}`}
           href="https://www.facebook.com"
@@ -15,7 +16,7 @@ function SocialMedia(props) {
           <FontAwesomeIcon icon={faFacebook} size="2x" />
           {`   `}
         </a>
-      </span>
+      </span> */}
       <span>
         <a
           className={`socialmedia-icon ${props.color}`}
