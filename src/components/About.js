@@ -3,6 +3,7 @@ import SocialMedia from "./SocialMedia";
 import TopImage from "./TopImage";
 import aboutPageImage from "../styles/images/poland-gfc372c5c7_1920.jpg";
 import Certificates from "./Certifacates";
+import certs from "../styles/images/index";
 
 function About() {
   useEffect(() => {
@@ -90,7 +91,30 @@ function About() {
         <p>Doradca ds. nieruchomości</p>
 
         <SocialMedia color="color-green" />
-        <Certificates />
+        <Certificates
+          certs={[
+            certs.certificateImage1,
+            certs.certificateImage2,
+            certs.certificateImage3,
+            certs.certificateImage4,
+            certs.certificateImage5,
+            certs.certificateImage6,
+            certs.certificateImage7,
+            certs.certificateImage8,
+            certs.certificateImage9,
+            certs.certificateImage10,
+            certs.certificateImage11,
+            certs.certificateImage12,
+            certs.certificateImage13,
+            certs.certificateImage14,
+            certs.certificateImage15,
+            certs.certificateImage16,
+            certs.certificateImage17,
+            certs.certificateImage18,
+            certs.certificateImage19,
+            certs.certificateImage20,
+          ]}
+        />
       </div>
     </div>
   );

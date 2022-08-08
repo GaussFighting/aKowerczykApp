@@ -8,8 +8,7 @@ import {
   NavItem,
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
-// import logo from "../styles/images/logo.png";
-import logo2 from "../styles/images/logo2.png";
+import logo from "../styles/images/logoWhite.png";
 
 function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,8 +31,7 @@ function Navigation() {
         light
       >
         <NavbarBrand href="/">
-          {/* <img src={logo} alt="logo" className="logo" /> */}
-          <img src={logo2} alt="logo" className="logo2" />
+          <img src={logo} alt="logo" className="logo" />
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
