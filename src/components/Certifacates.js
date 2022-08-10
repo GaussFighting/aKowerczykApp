@@ -1,6 +1,15 @@
 import React, { useState } from "react";
 
-import { CardGroup, Card, CardImg, Button, Modal, ModalBody } from "reactstrap";
+import {
+  CardGroup,
+  Card,
+  CardImg,
+  Button,
+  Modal,
+  ModalBody,
+  Row,
+  Col,
+} from "reactstrap";
 
 const Certificates = (props) => {
   let arrayOfModalStates = props.certs.map((cert, idx) => {
@@ -25,16 +34,13 @@ const Certificates = (props) => {
   };
 
   const isModalOpen = (certArg) => {
-    console.log("modalstates", modalStates);
-    console.log(certArg);
     let result = modalStates.find((obj) => {
       return obj.pathName === certArg;
     });
-    console.log("A", result);
     return result.modal;
   };
 
-  let asdf = props.certs
+  let listOfCerts = props.certs
     .slice(0)
     .reverse()
     .map((cert, idx) => {
@@ -61,9 +67,10 @@ const Certificates = (props) => {
             }}
             key={idx}
           >
-            <ModalBody>
+            <ModalBody className="modal-cert">
               {" "}
               <CardImg
+                className="modal-img"
                 key={idx}
                 alt="Card image cap"
                 src={cert}
@@ -76,7 +83,23 @@ const Certificates = (props) => {
         </Card>
       );
     });
-  return <CardGroup>{asdf} </CardGroup>;
+  let tableCreator = () => {
+    let table = [];
+    for (let i = 0; i < listOfCerts.length; i = i + 3) {
+      table = [
+        ...table,
+        <Row>
+          <Col key={i}>{listOfCerts[i]}</Col>
+          <Col key={i + 1}>{listOfCerts[i + 1]} </Col>
+          <Col key={i + 2}>{listOfCerts[i + 2]} </Col>
+        </Row>,
+      ];
+    }
+    console.log(table);
+    return table;
+  };
+
+  return <CardGroup>{tableCreator()}</CardGroup>;
 };
 
 export default Certificates;

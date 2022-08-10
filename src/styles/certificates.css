@@ -3,3 +3,16 @@
   background: no-repeat;
   background-size: contain;
 }
+
+.modal-cert {
+  background-color: none;
+}
+
+.modal-img {
+  height: 1200px;
+  width: auto;
+  position: static;
+}
+.modal-content {
+  background-color: transparent;
+}
