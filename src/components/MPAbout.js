@@ -28,21 +28,30 @@ function MPAbout() {
       </p>
 
       <ul>
-        <li>
+        <li className="bullet-points">
           {" "}
           Nie radzisz sobie z zawiłościami dokumentów, potrzebujesz sprawdzić
           księgę wieczysta?
         </li>
-        <li>
+        <li className="bullet-points">
           {" "}
           Potrzebujesz złożyć wniosek do ksiąg wieczystych, przygotować umowę
           przedwstępną, pozyskać mapy geodezyjne, sprawdzić plan
           zagospodarowania?
         </li>
-        <li> Otrzymałeś spadek i nie wiesz co dalej?</li>
-        <li> Chcesz wynająć lub sprzedać mieszkanie, nieruchomość?</li>
-        <li> Potrzebujesz wyceny?</li>
-        <li> Potrzebujesz opinii, ekspertyzy, badania rynku?</li>
+        <li className="bullet-points">
+          {" "}
+          Otrzymałeś spadek i nie wiesz co dalej?
+        </li>
+        <li className="bullet-points">
+          {" "}
+          Chcesz wynająć lub sprzedać mieszkanie, nieruchomość?
+        </li>
+        <li className="bullet-points"> Potrzebujesz wyceny?</li>
+        <li className="bullet-points">
+          {" "}
+          Potrzebujesz opinii, ekspertyzy, badania rynku?
+        </li>
       </ul>
 
       <p>

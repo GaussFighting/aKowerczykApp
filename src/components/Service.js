@@ -24,7 +24,7 @@ function Service(props) {
               {props.points && (
                 <ul>
                   {props.points.map((point) => {
-                    return <li>{point}</li>;
+                    return <li className="bullet-points">{point}</li>;
                   })}
                 </ul>
               )}
