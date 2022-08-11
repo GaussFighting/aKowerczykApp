@@ -47,6 +47,7 @@ const Certificates = (props) => {
       return (
         <Card key={idx}>
           <Button
+            className="cert-button"
             onClick={() => {
               toggleModal(cert);
             }}

@@ -9,10 +9,19 @@
 }
 
 .modal-img {
-  height: 1200px;
-  width: auto;
+  height: 1100px;
+  width: 700px;
   position: static;
 }
 .modal-content {
   background-color: transparent;
+}
+
+.cert-button {
+  background-color: transparent;
+}
+.cert-button:hover {
+  background-color: transparent;
+  border-width: 2px;
+  border-color: var(--secondary-color);
 }

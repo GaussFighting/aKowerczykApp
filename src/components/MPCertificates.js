@@ -8,9 +8,9 @@ function MPCertificates() {
       {console.log(certs.certificateImage1)}
       <Certificates
         certs={[
-          certs.certificateImage3,
-          certs.certificateImage10,
           certs.certificateImage20,
+          certs.certificateImage19,
+          certs.certificateImage18,
         ]}
       />
     </div>

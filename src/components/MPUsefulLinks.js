@@ -17,7 +17,7 @@ function MPUsefulLinks() {
             >
               <FontAwesomeIcon icon={faCalculator} size="2x" />{" "}
               <span className="useful-link">
-                Kalkulator opłat notarialnych{" "}
+                <b>Kalkulator opłat notarialnych</b>
               </span>
             </a>
           </div>
@@ -35,7 +35,7 @@ function MPUsefulLinks() {
             >
               <FontAwesomeIcon icon={faCalculator} size="2x" />{" "}
               <span className="useful-link">
-                Kalkulator kredytu hipotecznego
+                <b>Kalkulator kredytu hipotecznego</b>
               </span>
             </a>
           </div>
@@ -56,7 +56,9 @@ function MPUsefulLinks() {
               rel="noreferrer"
             >
               <FontAwesomeIcon icon={faCalculator} size="2x" />{" "}
-              <span className="useful-link">Księgi wieczyste</span>
+              <span className="useful-link">
+                <b>Księgi wieczyste</b>
+              </span>
             </a>
           </div>
           <div>
@@ -76,7 +78,9 @@ function MPUsefulLinks() {
               rel="noreferrer"
             >
               <FontAwesomeIcon icon={faCalculator} size="2x" />{" "}
-              <span className="useful-link">ZGKiKM</span>
+              <span className="useful-link">
+                <b>ZGKiKM</b>
+              </span>
             </a>
           </div>
           <div>
@@ -96,7 +100,9 @@ function MPUsefulLinks() {
               rel="noreferrer"
             >
               <FontAwesomeIcon icon={faCalculator} size="2x" />{" "}
-              <span className="useful-link">WROSIP</span>
+              <span className="useful-link">
+                <b>WROSIP</b>
+              </span>
             </a>
           </div>
           <div>
@@ -117,7 +123,7 @@ function MPUsefulLinks() {
             >
               <FontAwesomeIcon icon={faCalculator} size="2x" />{" "}
               <span className="useful-link">
-                Internetowy System Aktów Prawnych
+                <b>Internetowy System Aktów Prawnych</b>
               </span>
             </a>
           </div>
@@ -138,7 +144,9 @@ function MPUsefulLinks() {
               rel="noreferrer"
             >
               <FontAwesomeIcon icon={faCalculator} size="2x" />{" "}
-              <span className="useful-link">Główny Urząd Statystyczny</span>
+              <span className="useful-link">
+                <b>Główny Urząd Statystyczny</b>
+              </span>
             </a>
           </div>
           <div>
@@ -159,7 +167,7 @@ function MPUsefulLinks() {
             >
               <FontAwesomeIcon icon={faCalculator} size="2x" />{" "}
               <span className="useful-link">
-                Ministerstwo Rozwoju i Technologii
+                <b>Ministerstwo Rozwoju i Technologii</b>
               </span>
             </a>
           </div>
@@ -180,7 +188,9 @@ function MPUsefulLinks() {
               rel="noreferrer"
             >
               <FontAwesomeIcon icon={faCalculator} size="2x" />{" "}
-              <span className="useful-link">GEOPORTAL</span>
+              <span className="useful-link">
+                <b>GEOPORTAL</b>
+              </span>
             </a>
           </div>
           <div>
@@ -200,7 +210,9 @@ function MPUsefulLinks() {
               rel="noreferrer"
             >
               <FontAwesomeIcon icon={faCalculator} size="2x" />{" "}
-              <span className="useful-link">EKOPORTAL</span>
+              <span className="useful-link">
+                <b>EKOPORTAL</b>
+              </span>
             </a>
           </div>
           <div>
@@ -220,7 +232,9 @@ function MPUsefulLinks() {
               rel="noreferrer"
             >
               <FontAwesomeIcon icon={faCalculator} size="2x" />{" "}
-              <span className="useful-link">Podatki</span>
+              <span className="useful-link">
+                <b>Podatki</b>
+              </span>
             </a>
           </div>
           <div>

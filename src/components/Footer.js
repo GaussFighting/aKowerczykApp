@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col, NavbarBrand } from "reactstrap";
 import { NavLink } from "react-router-dom";
 import SocialMedia from "./SocialMedia";
 import logo from "../styles/images/logoWhite.png";
@@ -17,7 +17,10 @@ function Footer() {
       <Container className="footer-container mw-100">
         <Row>
           <Col className="align-self-center text-center">
-            <img src={logo} alt="logo" className="logo-footer" />
+            <NavbarBrand href="/">
+              {" "}
+              <img src={logo} alt="logo" className="logo-footer" />
+            </NavbarBrand>{" "}
           </Col>
           <Col className="py-3">
             <NavLink className="fw-bold pb-2 footer-contact" to="/contact">
