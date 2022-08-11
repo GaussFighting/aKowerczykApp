@@ -1,195 +1,106 @@
-import React from "react";
+import React, { useState } from "react";
 
-import { CardGroup, Card, CardImg } from "reactstrap";
-
-// import {
-//   Carousel,
-//   CarouselIndicators,
-//   CarouselItem,
-//   CarouselControl,
-// } from "reactstrap";
+import {
+  CardGroup,
+  Card,
+  CardImg,
+  Button,
+  Modal,
+  ModalBody,
+  Row,
+  Col,
+} from "reactstrap";
 
 const Certificates = (props) => {
-  console.log(props.certs);
-  let asdf = props.certs
+  let arrayOfModalStates = props.certs.map((cert, idx) => {
+    return {
+      pathName: cert,
+      modal: false,
+    };
+  });
+
+  const [modalStates, setModalStates] = useState(arrayOfModalStates);
+
+  const toggleModal = (certArg) => {
+    setModalStates((prev) => {
+      let updatedModalStates = prev.map((obj) => {
+        return {
+          ...obj,
+          modal: obj.pathName === certArg ? !obj.modal : obj.modal,
+        };
+      });
+      return updatedModalStates;
+    });
+  };
+
+  const isModalOpen = (certArg) => {
+    let result = modalStates.find((obj) => {
+      return obj.pathName === certArg;
+    });
+    return result.modal;
+  };
+
+  let listOfCerts = props.certs
     .slice(0)
     .reverse()
-    .map((cert) => {
+    .map((cert, idx) => {
       return (
-        <Card>
-          <CardImg alt="Card image cap" src={cert} top width="100%" />
+        <Card key={idx}>
+          <Button
+            className="cert-button"
+            onClick={() => {
+              toggleModal(cert);
+            }}
+          >
+            <CardImg
+              alt="Card image cap"
+              src={cert}
+              top
+              width="100%"
+              index={idx}
+            />
+          </Button>
+          {console.log(modalStates.modal)}
+          <Modal
+            isOpen={isModalOpen(cert)}
+            toggle={() => {
+              toggleModal(cert);
+            }}
+            key={idx}
+          >
+            <ModalBody className="modal-cert">
+              {" "}
+              <CardImg
+                className="modal-img"
+                key={idx}
+                alt="Card image cap"
+                src={cert}
+                top
+                width="100%"
+                index={idx}
+              />
+            </ModalBody>
+          </Modal>
         </Card>
       );
     });
-  return <CardGroup>{asdf}</CardGroup>;
+  let tableCreator = () => {
+    let table = [];
+    for (let i = 0; i < listOfCerts.length; i = i + 3) {
+      table = [
+        ...table,
+        <Row>
+          <Col key={i}>{listOfCerts[i]}</Col>
+          <Col key={i + 1}>{listOfCerts[i + 1]} </Col>
+          <Col key={i + 2}>{listOfCerts[i + 2]} </Col>
+        </Row>,
+      ];
+    }
+    console.log(table);
+    return table;
+  };
 
-  // const certificateImagesArray = [
-  //   {
-  //     id: 1,
-  //     src: certificateImage1,
-  //     position: "0",
-  //   },
-  //   {
-  //     id: 2,
-  //     src: certificateImage2,
-  //     position: "0",
-  //   },
-  //   {
-  //     id: 3,
-  //     src: certificateImage3,
-  //     position: "0",
-  //   },
-  //   {
-  //     id: 4,
-  //     src: certificateImage4,
-  //     position: "0",
-  //   },
-  //   {
-  //     id: 5,
-  //     src: certificateImage5,
-  //     position: "0",
-  //   },
-  //   {
-  //     id: 6,
-  //     src: certificateImage6,
-  //     position: "0",
-  //   },
-  //   {
-  //     id: 7,
-  //     src: certificateImage7,
-  //     position: "0",
-  //   },
-  //   {
-  //     id: 8,
-  //     src: certificateImage8,
-  //     position: "0",
-  //   },
-  //   {
-  //     id: 9,
-  //     src: certificateImage9,
-  //     position: "0",
-  //   },
-  //   {
-  //     id: 10,
-  //     src: certificateImage10,
-  //     position: "0",
-  //   },
-  //   {
-  //     id: 11,
-  //     src: certificateImage11,
-  //     position: "0",
-  //   },
-  //   {
-  //     id: 12,
-  //     src: certificateImage12,
-  //     position: "0",
-  //   },
-  //   {
-  //     id: 13,
-  //     src: certificateImage13,
-  //     position: "0",
-  //   },
-  //   {
-  //     id: 14,
-  //     src: certificateImage14,
-  //     position: "0",
-  //   },
-  //   {
-  //     id: 15,
-  //     src: certificateImage15,
-  //     position: "0",
-  //   },
-  //   {
-  //     id: 16,
-  //     src: certificateImage16,
-  //     position: "0",
-  //   },
-  //   {
-  //     id: 17,
-  //     src: certificateImage17,
-  //     position: "0",
-  //   },
-  //   {
-  //     id: 18,
-  //     src: certificateImage18,
-  //     position: "0",
-  //   },
-  //   {
-  //     id: 19,
-  //     src: certificateImage19,
-  //     position: "0",
-  //   },
-  //   {
-  //     id: 20,
-  //     src: certificateImage20,
-  //     position: "0",
-  //   },
-  // ];
-  // const [activeIndex, setActiveIndex] = useState(0);
-  // let animating = false;
-  // const onExiting = () => {
-  //   animating = false;
-  // };
-  // const onExited = () => {
-  //   animating = false;
-  // };
-  // const next = () => {
-  //   if (animating) return;
-  //   const nextIndex =
-  //     activeIndex === certificateImagesArray.length - 1 ? 0 : activeIndex + 1;
-  //   setActiveIndex(nextIndex);
-  // };
-  // const previous = () => {
-  //   if (animating) return;
-  //   const nextIndex =
-  //     activeIndex === 0 ? certificateImagesArray.length - 1 : activeIndex - 1;
-  //   setActiveIndex(nextIndex);
-  // };
-  // const goToIndex = (newIndex) => {
-  //   if (animating) return;
-  //   setActiveIndex(newIndex);
-  // };
-  // const slides = certificateImagesArray.map((item) => {
-  //   return (
-  //     <CarouselItem onExiting={onExiting} onExited={onExited} key={item.id}>
-  //       <div
-  //         className="certificate-images"
-  //         style={{
-  //           backgroundImage: `url(${item.src})`,
-  //           backgroundPosition: `center ${item.position}%`,
-  //         }}
-  //       />
-  //     </CarouselItem>
-  //   );
-  // });
-  // return (
-  //   <div>
-  //     <Carousel
-  //       activeIndex={activeIndex}
-  //       next={next}
-  //       previous={previous}
-  //       pause={false}
-  //       autoPlay={true}
-  //     >
-  //       <CarouselIndicators
-  //         items={certificateImagesArray}
-  //         activeIndex={activeIndex}
-  //         onClickHandler={goToIndex}
-  //       />
-  //       {slides}
-  //       <CarouselControl
-  //         direction="prev"
-  //         directionText="Previous"
-  //         onClickHandler={previous}
-  //       />
-  //       <CarouselControl
-  //         direction="next"
-  //         directionText="Next"
-  //         onClickHandler={next}
-  //       />
-  //     </Carousel>
-  //   </div>
-  // );
+  return <CardGroup>{tableCreator()}</CardGroup>;
 };
 
 export default Certificates;

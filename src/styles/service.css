@@ -14,3 +14,10 @@ h3.service-title {
   text-align: justify;
   min-height: 280px;
 }
+
+.bullet-points {
+  list-style-type: "\27A2";
+  margin-left: 10;
+  padding-left: 1em;
+  text-indent: 0;
+}
