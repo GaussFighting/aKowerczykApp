@@ -1,0 +1,49 @@
+{
+  "activity": [
+    {
+      "logo": [
+        {
+          "src": "/images/parkOlawskiLogo.jpg",
+          "position": "100",
+          "width": "827px",
+          "height": "466px"
+        }
+      ],
+      "id": "1",
+      "title": "PARK OŁAWSKI",
+      "email": "parkolawski@gmail.com",
+      "adress": "https://www.facebook.com/parkolawski/about/?ref=page_internal",
+      "description": " Występując jako lokalny aktywista prowadzę działania zmierzające do utworzenia Parku Oławskiego na terenie Przedmieścia Oławskiego we Wrocławiu. Jestem inicjatorem i autorem wniosków do mpzp i studium odnośnie tego tematu. Aktywnie działając pozyskałam głosy kilkuset mieszkańców popierających projekt. Park Oławski to koncept zrodzony z inicjatywy mieszkańców. Jego autorką i propagatorką jest Agata Kowerczyk, mieszkanka Przedmieścia Oławskiego.  Inicjatywa zakłada zadbanie o utworzenie terenu zielonego na obszarze pokolejowym, pomiędzy torowiskiem od ul. Świstackiego i ul. Krakowską.  Adresatami konceptu są mieszkańcy Przedmieścia Oławskiego oraz dalszych osiedli (Księże, Brochów), którzy są użytkownikami owej przestrzeni.  Przemieszczając się do centrum miasta niezwykle ważne jest, aby zachować drożność ciągów komunikacyjnych, w tym rowerowych. Rzeczą niezwykłej wagi jest zadbanie o to, aby osiedle Przedmieście Oławskie od strony torów kolejowych miało obszary zielone, które będę zabezpieczały przed powstawaniem miejskiej wyspy ciepła, chroniły zasoby wody i dawały dobrą jakość życia mieszkańcom. Mieszkańcy uzyskali poparcie partnerstwa lokalnego – Koalicji Oławskiej, która zrzesza podmioty, które działają na rzecz osiedla i jego mieszkańców. Dlatego na etapie tworzenia MPZP nr 727 oraz Studium mieszkańcy, organizacje pozarządowe, Rada Osiedla oraz Koalicja Oławska złożyli wnioski do ww. dokumentów planistycznych, wskazując rangę i potrzebę utworzenia terenu zielonego – Parku Oławskiego."
+    },
+    {
+      "logo": [
+        {
+          "src": "/images/zwierzacaNadziejaLogo.png",
+          "position": "100",
+          "width": "500px",
+          "height": "500px"
+        }
+      ],
+      "id": "2",
+      "title": "ZWIERZĘCA NADZIEJA",
+      "email": "zwierzecanadzieja@gmail.com",
+      "adress": "https://www.facebook.com/Zwierz%C4%99ca-Nadzieja-101598462651702/?ref=page_internal",
+      "description": "Stowarzyszenie Zwierzęca Nadzieja działa dla dobra zwierząt poprzez pomoc oraz edukację. No i nastał ten dzień , że ruszyło Stowarzyszenie Zwierzęca Nadzieja  Kto nas zna osobiście, wie że pomaganie zwierzętom mamy we krwi. Połączyła nas miłość do zwierząt i to ona sprawiła, że dziś ogłaszamy oficjalnie, ze ruszamy. Więcej o nas i naszych planach będziemy informować w kolejnych postach. Znasz nas i podoba Ci się to co robimy? Koniecznie polub naszą stronę . Nie masz pojęcia kim jesteśmy, a los zwierząt jest Ci bliski, tym bardziej nas obserwuj. Zapraszamy"
+    },
+    {
+      "logo": [
+        {
+          "src": "/images/naszePrzedmiescieLogo.png",
+          "position": "100",
+          "width": "500px",
+          "height": "1000px"
+        }
+      ],
+      "id": "3",
+      "title": "NASZE PRZEDMIEŚCIE",
+      "emial": "",
+      "adress": "https://www.facebook.com/Nasze-Przedmie%C5%9Bcie-100828839015070",
+      "description": "https://www.facebook.com/Nasze-Przedmie%C5%9Bcie-100828839015070"
+    }
+  ]
+}

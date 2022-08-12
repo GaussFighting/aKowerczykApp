@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function MPUsefulLinks() {
   return (
     <div className="container pb-5">
-      <h1>PRZYDATNE LINKI</h1>
+      <h1 className="mpuseful-links-title">PRZYDATNE LINKI</h1>
       <ul className="list-unstyled">
         <li>
           <div>
