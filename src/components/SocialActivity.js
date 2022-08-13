@@ -4,7 +4,6 @@ import TopImage from "./TopImage";
 import SocialActivityPageImage from "../styles/images/dog.jpg";
 import activity from "../data/activity.json";
 import { HashLink as Link } from "react-router-hash-link";
-import SocialMedia from "./SocialMedia";
 
 const SocialActivity = () => {
   useEffect(() => {
@@ -22,7 +21,7 @@ const SocialActivity = () => {
     <div>
       <TopImage image={SocialActivityPageImage} position={0} />
       <div className="container page-container py-5">
-        <h1 clasName="socialactivity-title">DZIAŁALNOŚĆ SPOŁECZNA</h1>
+        <h1 className="socialactivity-title">DZIAŁALNOŚĆ SPOŁECZNA</h1>
         <Container>
           <Row>
             {allActivity.map((activity, idx) => {

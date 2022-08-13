@@ -1,5 +1,12 @@
 import React, { useEffect } from "react";
-import { Card, CardBody, CardTitle, CardSubtitle, CardText } from "reactstrap";
+import {
+  Card,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  CardText,
+  CardImg,
+} from "reactstrap";
 import { useParams } from "react-router-dom";
 import activity from "../data/activity.json";
 
@@ -22,32 +29,60 @@ const Activity = (props) => {
   }
   return (
     <div>
-      {console.log(signleActivity.logo[0].src)}
-      <Card>
-        <div
-          className="backdrop"
-          style={{ backgroundImage: `url(${signleActivity.logo[0].src})` }}
-        />
-        <div
-          className="blogImgCenter"
-          alt=""
-          style={{
-            backgroundImage: `url(${signleActivity.logo[0].src})`,
-          }}
-        ></div>
-      </Card>
-
-      <Card>
-        <CardBody>
-          <CardTitle>
-            <h4>{signleActivity.title}</h4>
-          </CardTitle>
-          <CardSubtitle>{signleActivity.email}</CardSubtitle>
-          <CardText> {signleActivity.description}</CardText>
-        </CardBody>
-      </Card>
-
-      <div>{signleActivity.adress}</div>
+      <div className="container page-container py-5">
+        <Card className="my-2">
+          <CardImg
+            alt="Card image cap"
+            src={signleActivity.logo[0].src}
+            style={{
+              height: 750,
+            }}
+            top
+            width="100%"
+          />
+          <CardBody>
+            <CardTitle>
+              <h4>
+                {" "}
+                <a
+                  href={signleActivity.adress}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inner-link"
+                >
+                  {signleActivity.title}
+                </a>
+              </h4>
+            </CardTitle>
+            {signleActivity.email && (
+              <CardSubtitle>E-mail: {signleActivity.email}</CardSubtitle>
+            )}
+            <CardText> {signleActivity.description}</CardText>
+            {signleActivity.ourEvents && (
+              <CardText>
+                <h5>{signleActivity.ourEvents + ":"}</h5>
+                <CardText>
+                  {signleActivity.events.map((event, idx) => {
+                    return (
+                      <CardText key={`${event.title}-${idx}`}>
+                        {" "}
+                        <a
+                          href={event.src}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inner-link"
+                        >
+                          {event.title}
+                        </a>
+                      </CardText>
+                    );
+                  })}
+                </CardText>
+              </CardText>
+            )}
+          </CardBody>
+        </Card>
+      </div>
     </div>
   );
 };

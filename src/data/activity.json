@@ -43,7 +43,50 @@
       "title": "NASZE PRZEDMIEŚCIE",
       "emial": "",
       "adress": "https://www.facebook.com/Nasze-Przedmie%C5%9Bcie-100828839015070",
-      "description": "https://www.facebook.com/Nasze-Przedmie%C5%9Bcie-100828839015070"
+      "description": "Grupa mieszkańców Przedmieścia Oławskiego we Wrocławiu. Działa jako sąsiedzka grupa nieformalna na terenie swojego osiedla i współpracuje z organizacjami miejskimi i NGO także na terenie innych osiedli Wrocławia.",
+      "ourEvents": "Nasze wydarzenia",
+      "events": [
+        {
+          "title": "Oławski Patrol Kajakowy",
+          "src": "https://www.facebook.com/events/335962878662359/?acontext=%7B%22event_action_history%22%3A[%7B%22surface%22%3A%22page%22%7D]%7D"
+        },
+        {
+          "title": "Cykl debat o osiedlu - Park Oławski",
+          "src": "https://m.facebook.com/events/566394341478365/?acontext=%7B%22event_action_history%22%3A%5B%7B%22surface%22%3A%22page%22%7D%5D%7D&_rdr"
+        },
+        {
+          "title": "Czysta Oławka - sprzątamy okolice rzeki Oławy",
+          "src": "https://m.facebook.com/events/998787264362874/?acontext=%7B%22event_action_history%22%3A%5B%7B%22surface%22%3A%22page%22%7D%5D%7D&_rdr"
+        },
+        {
+          "title": "Wielkie Sprzątanie Trójkąta",
+          "src": "https://m.facebook.com/events/3120845188156699/?acontext=%7B%22event_action_history%22%3A%5B%7B%22surface%22%3A%22page%22%7D%5D%7D&_rdr"
+        },
+        {
+          "title": "Podwórko,we porządki na Przedmieściu Oławskim",
+          "src": "https://m.facebook.com/events/4844720568982172/?acontext=%7B%22event_action_history%22%3A%5B%7B%22surface%22%3A%22page%22%7D%5D%7D&_rdr"
+        },
+        {
+          "title": "Wymień się książką - porozmawiaj z Markiem Krajewskim",
+          "src": "https://m.facebook.com/events/558809862049673/?acontext=%7B%22event_action_history%22%3A%5B%7B%22surface%22%3A%22page%22%7D%5D%7D&_rdr"
+        }
+      ],
+      "titleEvents": [
+        "Oławski Patrol Kajakowy",
+        "Cykl debat o osiedlu - Park Oławski",
+        "Czysta Oławka - sprzątamy okolice rzeki Oławy",
+        "Wielkie Sprzątanie Trójkąta",
+        "Podwórko,we porządki na Przedmieściu Oławskim",
+        "Wymień się książką - porozmawiaj z Markiem Krajewskim"
+      ],
+      "linkEvents": [
+        "https://www.facebook.com/events/335962878662359/?acontext=%7B%22event_action_history%22%3A[%7B%22surface%22%3A%22page%22%7D]%7D",
+        "https://m.facebook.com/events/566394341478365/?acontext=%7B%22event_action_history%22%3A%5B%7B%22surface%22%3A%22page%22%7D%5D%7D&_rdr",
+        "https://m.facebook.com/events/998787264362874/?acontext=%7B%22event_action_history%22%3A%5B%7B%22surface%22%3A%22page%22%7D%5D%7D&_rdr",
+        "https://m.facebook.com/events/3120845188156699/?acontext=%7B%22event_action_history%22%3A%5B%7B%22surface%22%3A%22page%22%7D%5D%7D&_rdr",
+        "https://m.facebook.com/events/4844720568982172/?acontext=%7B%22event_action_history%22%3A%5B%7B%22surface%22%3A%22page%22%7D%5D%7D&_rdr",
+        "https://m.facebook.com/events/558809862049673/?acontext=%7B%22event_action_history%22%3A%5B%7B%22surface%22%3A%22page%22%7D%5D%7D&_rdr"
+      ]
     }
   ]
 }
