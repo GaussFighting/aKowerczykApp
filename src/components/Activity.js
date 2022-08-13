@@ -47,7 +47,7 @@ const Activity = (props) => {
                 <a
                   href={signleActivity.adress}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="inner-link"
                 >
                   {signleActivity.title}
@@ -69,7 +69,7 @@ const Activity = (props) => {
                         <a
                           href={event.src}
                           target="_blank"
-                          rel="noreferrer"
+                          rel="noopener noreferrer"
                           className="inner-link"
                         >
                           {event.title}

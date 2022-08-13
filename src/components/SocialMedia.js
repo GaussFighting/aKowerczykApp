@@ -11,7 +11,7 @@ function SocialMedia(props) {
           className={`socialmedia-icon ${props.color}`}
           href="https://www.facebook.com"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faFacebook} size="2x" />
           {`   `}
@@ -22,7 +22,7 @@ function SocialMedia(props) {
           className={`socialmedia-icon ${props.color}`}
           href="https://www.linkedin.com/in/agata-kowerczyk-a82022137/"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faLinkedin} size="2x" />
         </a>
