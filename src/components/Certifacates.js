@@ -60,7 +60,6 @@ const Certificates = (props) => {
               index={idx}
             />
           </Button>
-          {console.log(modalStates.modal)}
           <Modal
             isOpen={isModalOpen(cert)}
             toggle={() => {
@@ -96,7 +95,6 @@ const Certificates = (props) => {
         </Row>,
       ];
     }
-    console.log(table);
     return table;
   };
 
