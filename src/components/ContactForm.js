@@ -1,34 +1,40 @@
-import React, { useState } from 'react';
-import { Button, Label } from 'reactstrap';
-import {
-  AvForm,
-  AvGroup,
-  AvInput,
-  AvFeedback,
-} from 'availity-reactstrap-validation';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Button, Label } from "reactstrap";
+import { Form, FormGroup, Input } from "reactstrap";
+import { Link } from "react-router-dom";
 
 function ContactForm() {
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [nameAndSurnameFieldValue, setNameAndSurnameFieldValue] = useState('');
-  const [emailFieldValue, setEmailFieldValue] = useState('');
-  const [phoneFieldValue, setPhoneFieldValue] = useState('');
-  const [messageFieldValue, setMessageFieldValue] = useState('');
+  const [nameAndSurnameFieldValue, setNameAndSurnameFieldValue] = useState("");
+  const [emailFieldValue, setEmailFieldValue] = useState("");
+  const [phoneFieldValue, setPhoneFieldValue] = useState("");
+  const [messageFieldValue, setMessageFieldValue] = useState("");
+  const [isPolicyAccepted, setIsPolicyAccepted] = useState("");
+  const [error, setError] = useState(null);
 
   const encode = (data) => {
     return Object.keys(data)
       .map(
-        (key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]),
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
       )
-      .join('&');
+      .join("&");
   };
 
-  const onValidSubmit = (e) => {
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+  const onSubmit = (e) => {
+    e.preventDefault();
+    if (!nameAndSurnameFieldValue)
+      return setError("Imię i nazwisko są wymagane");
+    if (!emailFieldValue || !emailFieldValue.includes("@"))
+      return setError("Email jest wymagany");
+    if (!messageFieldValue) return setError("Wiadomość jest wymagana");
+    if (!isPolicyAccepted)
+      return setError("Wymagane jest zaakceptowanie polityki prywatności");
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
-        'form-name': 'contactForm',
+        "form-name": "contactForm",
         nameAndSurname: nameAndSurnameFieldValue,
         email: emailFieldValue,
         phone: phoneFieldValue,
@@ -39,7 +45,7 @@ function ContactForm() {
       .then(() => setIsSubmitted(true))
       .catch((error) => alert(error));
 
-    e.preventDefault();
+    setError("");
   };
   return (
     <div>
@@ -50,79 +56,85 @@ function ContactForm() {
       ) : (
         <div>
           <h3>Dane do kontaktu:</h3>
-          <AvForm
+          <Form
             name="contactForm"
             method="post"
             data-netlify="true"
-            onValidSubmit={onValidSubmit}
+            onSubmit={onSubmit}
             data-netlify-recaptcha="true"
           >
-            <AvInput type="hidden" name="form-name" value="contactForm" />
-            <AvInput
+            <Input type="hidden" name="form-name" value="contactForm" />
+            <Input
               type="hidden"
               name="subject"
               id="subject"
               value="Zgłoszenie z formularza kontaktowego"
             />
-            <AvGroup>
-              <AvInput
+            <FormGroup>
+              <Input
                 type="text"
                 name="nameAndSurname"
                 id="nameAndSurname"
-                placeholder="Imię i nazwisko"
-                required
-                onChange={e => setNameAndSurnameFieldValue(e.target.value)}
+                placeholder="Imię i nazwisko*"
+                onChange={(e) => {
+                  setNameAndSurnameFieldValue(e.target.value);
+                }}
               />
-              <AvFeedback>Pole jest wymagane</AvFeedback>
-            </AvGroup>
-            <AvGroup>
-              <AvInput
+            </FormGroup>
+            <FormGroup>
+              <Input
                 type="email"
                 name="email"
                 id="email"
-                placeholder="Email"
-                required
-                onChange={e => setEmailFieldValue(e.target.value)}
+                placeholder="Email*"
+                onChange={(e) => {
+                  setEmailFieldValue(e.target.value);
+                }}
               />
-              <AvFeedback>Pole jest wymagane</AvFeedback>
-            </AvGroup>
-            <AvGroup>
-              <AvInput
+            </FormGroup>
+            <FormGroup>
+              <Input
                 type="text"
                 name="phone"
                 id="phone"
                 placeholder="Telefon kontaktowy (opcjonalnie)"
-                onChange={e => setPhoneFieldValue(e.target.value)}
+                onChange={(e) => setPhoneFieldValue(e.target.value)}
               />
-            </AvGroup>
-            <AvGroup>
-              <AvInput
+            </FormGroup>
+            <FormGroup>
+              <Input
                 type="textarea"
                 name="message"
                 id="message"
-                placeholder="Wiadomość"
-                required
-                onChange={e => setMessageFieldValue(e.target.value)}
+                placeholder="Wiadomość*"
+                onChange={(e) => setMessageFieldValue(e.target.value)}
               />
-              <AvFeedback>Pole jest wymagane</AvFeedback>
-            </AvGroup>
-            <AvGroup check>
+            </FormGroup>
+            <FormGroup check>
               <Label check>
-                <AvInput required type="checkbox" name="status"/> Wyrażam zgodę
-                na przetwarzanie moich danych osobowych przez nazwaFirmy,
-                adresFirmy w celu i w zakresie niezbędnym do realizacji obsługi
-                niniejszego zgłoszenia. Zapoznałem się z treścią informacji o
-                sposobie przetwarzania moich danych osobowych ze stony{' '}
+                <Input
+                  type="checkbox"
+                  name="status"
+                  onClick={(e) => setIsPolicyAccepted(e.target.checked)}
+                />{" "}
+                *Wyrażam zgodę na przetwarzanie moich danych osobowych przez
+                nazwaFirmy, adresFirmy w celu i w zakresie niezbędnym do
+                realizacji obsługi niniejszego zgłoszenia. Zapoznałem się z
+                treścią informacji o sposobie przetwarzania moich danych
+                osobowych ze stony{" "}
                 <Link className="inner-link" to="/privacy-policy">
                   polityki prywatności
                 </Link>
               </Label>
-            </AvGroup>
+            </FormGroup>
             <div data-netlify-recaptcha="true"></div>
             <div className="text-center">
               <Button className="btn_submit_form">Wyślij</Button>
             </div>
-          </AvForm>
+          </Form>
+          {error && (
+            <div style={{ fontWeight: "bold", color: "red" }}>{error}</div>
+          )}
         </div>
       )}
     </div>

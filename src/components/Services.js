@@ -20,8 +20,8 @@ function Services() {
   return (
     <div>
       <TopImage image={servicesPageImage} position={68} />
-      <div className="container page-container py-5">
-        <h1>USŁUGI</h1>
+      <div className="container page-container py-5 ">
+        <h1 className="services-title">USŁUGI</h1>
         <Container>
           <Row className="services-row">
             <Col md={4} className="services-col">

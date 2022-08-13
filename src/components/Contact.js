@@ -17,7 +17,7 @@ function Contact() {
     <div>
       <TopImage image={contactPageImage} position={58} />
       <div className="container page-container py-5">
-        <h1>KONTAKT</h1>
+        <h1 className="contact-title">KONTAKT</h1>
         <div className="py-4">
           <div>
             <a href="mailto:naknieruchomosci@gmail.com" className="inner-link">

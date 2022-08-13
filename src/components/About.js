@@ -16,8 +16,8 @@ function About() {
   return (
     <div>
       <TopImage image={aboutPageImage} position={88} />
-      <div className="container page-container py-5">
-        <h1>O FIRMIE</h1>
+      <div className="container page-container py-5 ">
+        <h1 className="about-title">O FIRMIE</h1>
 
         <p>
           NAK Nieruchomości to firma założona przez Agatę Kowerczyk działająca
