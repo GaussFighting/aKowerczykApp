@@ -5,7 +5,6 @@ import certs from "../styles/images/index.js";
 function MPCertificates() {
   return (
     <div className="container pb-5">
-      {console.log(certs.certificateImage1)}
       <Certificates
         certs={[
           certs.certificateImage20,

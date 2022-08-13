@@ -66,6 +66,11 @@ function Navigation() {
                 KONTAKT
               </NavLink>
             </NavItem>
+            <NavItem onClick={navTogglerClose}>
+              <NavLink className="nav-link pl-4" to="/socialactivity">
+                DZIAŁALNOŚĆ SPOŁECZNA
+              </NavLink>
+            </NavItem>
           </Nav>
         </Collapse>
       </Navbar>

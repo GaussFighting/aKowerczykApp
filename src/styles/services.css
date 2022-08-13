@@ -1,3 +1,7 @@
+.services-title {
+  color: var(--secondary-color);
+}
+
 .services-row {
   display: flex;
 }

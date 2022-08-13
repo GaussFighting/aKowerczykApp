@@ -1,3 +1,7 @@
+.contact-title {
+  color: var(--secondary-color);
+}
+
 .useful-link {
   vertical-align: super;
 }

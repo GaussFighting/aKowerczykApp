@@ -1,0 +1,17 @@
+.socialactivity-title {
+  color: var(--secondary-color);
+}
+
+.imgCenter {
+  background: no-repeat;
+  display: block;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+.imgCenter:hover {
+  box-shadow: 10px 10px 5px 12px var(--primary-color);
+}
