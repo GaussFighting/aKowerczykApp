@@ -11,8 +11,8 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import OfferPage from "./components/OfferPage";
-import SocialActivity from "./components/SocialActivity";
-import Activity from "./components/Activity";
+// import SocialActivity from "./components/SocialActivity";
+// import Activity from "./components/Activity";
 
 function App() {
   return (
@@ -29,8 +29,8 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/offer/:id" element={<OfferPage />} />
           <Route path="/" element={<MainPage />} />
-          <Route path="/socialactivity" element={<SocialActivity />} />
-          <Route path="/socialactivity/:id" element={<Activity />} />
+          {/* <Route path="/socialactivity" element={<SocialActivity />} />
+          <Route path="/socialactivity/:id" element={<Activity />} /> */}
         </Routes>
         <Footer />
       </div>
