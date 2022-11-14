@@ -16,7 +16,6 @@ const SocialActivity = () => {
     return b.id > a.id ? -1 : 1;
   });
 
-  console.log(allActivity);
   return (
     <div>
       <TopImage image={SocialActivityPageImage} position={0} />
@@ -25,7 +24,6 @@ const SocialActivity = () => {
         <Container>
           <Row>
             {allActivity.map((activity, idx) => {
-              console.log(activity.logo[0].src);
               return (
                 <Link
                   className="py-5"
