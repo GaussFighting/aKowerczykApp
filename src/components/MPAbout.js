@@ -10,84 +10,55 @@ function MPAbout() {
       </NavLink>
 
       <p>
-        NAK Nieruchomości to firma założona przez Agatę Kowerczyk działająca na
-        rynku nieruchomości od 1992r. Oferuje wsparcie i doradztwo w zakresie
-        kompleksowych usług na rynku nieruchomości.
-      </p>
-
-      <p>
-        Klienci firmy mogą liczyć na rzetelność każdej prowadzonej sprawy ,
-        zaangażowanie i ułatwienie poruszania się na rynku nieruchomości.
-      </p>
-
-      <p>
-        NAK Nieruchomości to pomoc w analizie stanu prawnego nieruchomości,
-        badaniach ksiąg wieczystych i dokumentów planistycznych, analizie
-        możliwości zagospodarowania nieruchomości, ustanawianiu służebności
-        przesyłu .
-      </p>
-
-      <ul>
-        <li className="bullet-points">
-          {" "}
-          Nie radzisz sobie z zawiłościami dokumentów, potrzebujesz sprawdzić
-          księgę wieczysta?
-        </li>
-        <li className="bullet-points">
-          {" "}
-          Potrzebujesz złożyć wniosek do ksiąg wieczystych, przygotować umowę
-          przedwstępną, pozyskać mapy geodezyjne, sprawdzić plan
-          zagospodarowania?
-        </li>
-        <li className="bullet-points">
-          {" "}
-          Otrzymałeś spadek i nie wiesz co dalej?
-        </li>
-        <li className="bullet-points">
-          {" "}
-          Chcesz wynająć lub sprzedać mieszkanie, nieruchomość?
-        </li>
-        <li className="bullet-points"> Potrzebujesz wyceny?</li>
-        <li className="bullet-points">
-          {" "}
-          Potrzebujesz opinii, ekspertyzy, badania rynku?
-        </li>
-      </ul>
-
-      <p>
-        Firma NAK Nieruchomości pomoże w każdej z tych spraw i wielu innych.
-        Doradztwo i pomoc to główny cel mojej działalności. Usługi świadczymy na
-        terenie całej Polski z dużą wnikliwością i dbałością o klienta i
+        NAK Nieruchomości prowadzi działalność w zakresie doradztwa na rynku
         nieruchomości.
       </p>
 
       <p>
-        Współpracujemy ściśle z rzeczoznawcami majątkowymi, pośrednikami,
-        zarządcami nieruchomości , brokerami finansowymi, geodetami,
-        notariuszami, doradcami kredytowymi, architektami wnętrz i krajobrazu.
-        Swoją działalność na rynku nieruchomości rozpoczęłam w 1992r. zdobywając
-        doświadczenie jako pośrednik, zarządca, pracując w spółdzielni
-        mieszkaniowej, firmie developerskiej oraz zajmując się służebnościami
-        przesyły w przedsiębiorstwie energetycznym.{" "}
+        Nasze usługi skierowane są do developerów, inwestorów, funduszy
+        inwestycyjnych, przedsiębiorstw przesyłowych oraz osób prywatnych.
       </p>
 
       <p>
-        Obecnie świadczę usługi jako NAK Nieruchomości rozwiązując problemy i
-        dylematy moich klientów.
+        W ramach oferowanych usług związanych z rynkiem nieruchomości zapewniamy
+        pełną merytoryczną pomoc oraz rzetelną obsługę w zakresie doradztwa:
+      </p>
+
+      <ul>
+        <li className="bullet-points"> inwestycyjnego</li>
+        <li className="bullet-points"> transakcyjnego</li>
+        <li className="bullet-points"> strategicznego dla developerów</li>
+        <li className="bullet-points"> w zakresie służebności przesyłu</li>
+        <li className="bullet-points">
+          przy zawieraniu umów na rynku nieruchomości
+        </li>
+        <li className="bullet-points">
+          przy formalnościach dotyczących spadków i darowizn
+        </li>
+      </ul>
+
+      <p>Oferujemy również usługi w zakresie:</p>
+
+      <ul>
+        <li className="bullet-points"> wyceny nieruchomości oraz</li>
+        <li className="bullet-points"> home staging</li>
+        <li className="bullet-points"> analizy rynku nieruchomości</li>
+      </ul>
+      <p>Udzielamy informacji i porad dotyczących rynku nieruchomości.</p>
+
+      <p>
+        Diagnoza problemów, zalecanie rozwiązań, pomoc i wskazanie kierunku
+        działania to podstawa naszych relacji z klientem. Kwalifikacje i
+        wieloletnie doświadczenie naszych doradców pomaga trafnie dokonać
+        analizy, ocenić jakość informacji, wskazać zagrożenia oraz
+        zarekomendować najlepszy sposób postępowania.
       </p>
 
       <p>
-        Posiadam licencje pośrednika oraz zarządcy nieruchomości wymagane
-        jeszcze przed deregulacją zawodów. Posiadam doświadczenie we wszystkich
-        aspektach obsługi nieruchomości, dlatego jestem w stanie zaoferować
-        Państwu kompleksową obsługę.
+        Usługi świadczymy na terenie całej Polski działając z dużą wnikliwością
+        oraz dbałością o potrzeby klienta i jego nieruchomości.
       </p>
 
-      <p>Zapraszamy Państwa do nawiązania współpracy.</p>
-
-      <p>Agata Kowerczyk</p>
-
-      <p>Doradca ds. nieruchomości</p>
       <SocialMedia color="color-green" />
     </div>
   );

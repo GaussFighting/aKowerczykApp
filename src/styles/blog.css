@@ -1,3 +1,8 @@
 .blog-title {
   color: var(--secondary-color);
 }
+
+.blog-description {
+  white-space: pre-line;
+  text-align: justify;
+}
