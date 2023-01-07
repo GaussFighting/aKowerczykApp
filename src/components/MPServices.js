@@ -16,7 +16,7 @@ function MPServices() {
       </NavLink>
       <Container fluid>
         <Row>
-          <Col md={4}>
+          <Col lg={4}>
             <Service
               icon={faSearchLocation}
               title={"DORADZTWO"}
@@ -27,7 +27,7 @@ function MPServices() {
               isCollapseOpen={false}
             />
           </Col>
-          <Col md={4}>
+          <Col lg={4}>
             <Service
               icon={faMarker}
               title={"HOME STAGING"}
@@ -39,7 +39,7 @@ function MPServices() {
               isCollapseOpen={false}
             />
           </Col>
-          <Col md={4}>
+          <Col lg={4}>
             <Service
               icon={faHouseUser}
               title={"WYCENA"}
@@ -49,7 +49,7 @@ function MPServices() {
           </Col>
         </Row>
         <Row>
-          <Col md={4}>
+          <Col lg={4}>
             <Service
               icon={faSearchLocation}
               title={"DLA DEWELOPERÓW"}
@@ -67,7 +67,7 @@ function MPServices() {
               isCollapseOpen={false}
             />
           </Col>
-          <Col md={4}>
+          <Col lg={4}>
             <Service
               icon={faMarker}
               title={"DZIEDZICZENIE /SPADEK"}
@@ -82,7 +82,7 @@ function MPServices() {
               isCollapseOpen={false}
             />
           </Col>
-          <Col md={4}>
+          <Col lg={4}>
             <Service
               icon={faHouseUser}
               title={"SŁUZEBNOSCI PRZESYŁU"}

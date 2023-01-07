@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function MPUsefulLinks() {
   return (
-    <div className="container pb-5">
+    <div className="container pb-5 px-4">
       <h1 className="mpuseful-links-title">PRZYDATNE LINKI</h1>
       <ul className="list-unstyled">
         <li>
@@ -28,7 +28,7 @@ function MPUsefulLinks() {
               </span>
             </a>
           </div>
-          <div>
+          <div className="useful-link-description">
             <p>
               Zakup nieruchomości to znaczne obciążenie finansowe kupującego.
               Koszty to nie tylko sama cena transakcyjna, ale także dodatkowe
@@ -52,7 +52,7 @@ function MPUsefulLinks() {
               </span>
             </a>
           </div>
-          <div>
+          <div className="useful-link-description">
             <p>
               Stworzony z myślą o osobach stojącymi przed decyzją o zakupie
               nieruchomości, jak również przydatny dla tych, którzy kredyt
@@ -75,7 +75,7 @@ function MPUsefulLinks() {
               </span>
             </a>
           </div>
-          <div>
+          <div className="useful-link-description">
             <p>
               Aplikacja Ministerstwa Sprawiedliwości zawierająca bazę
               elektronicznych ksiąg wieczystych pozwalająca przeglądać zapisy
@@ -97,7 +97,7 @@ function MPUsefulLinks() {
               </span>
             </a>
           </div>
-          <div>
+          <div className="useful-link-description">
             <p>
               Portalu GEO-INFO i.Mapa dotyczący Wrocławia zawiera dane z
               ewidencji gruntów i budynków, obiekty topograficzne, uzbrojenie
@@ -143,7 +143,7 @@ function MPUsefulLinks() {
               </span>
             </a>
           </div>
-          <div>
+          <div className="useful-link-description">
             <p>
               System informacji prawnej redagowany przez zespół specjalistów w
               Ośrodku Informatyki Kancelarii Sejmu. ISAP jest częścią Systemu
@@ -170,7 +170,7 @@ function MPUsefulLinks() {
               </span>
             </a>
           </div>
-          <div>
+          <div className="useful-link-description">
             <p>
               Centralny Informator Statystycznego GUS publikujący dane
               statystyczne, szczególnie wykorzystywany jako poszerzenie zakresu
@@ -193,7 +193,7 @@ function MPUsefulLinks() {
               </span>
             </a>
           </div>
-          <div>
+          <div className="useful-link-description">
             <p>
               Ministerstwo Rozwoju i Technologii jest urzędem administracji
               rządowej zapewniającym obsługę Ministra Rozwoju i Technologii.
@@ -216,7 +216,7 @@ function MPUsefulLinks() {
               </span>
             </a>
           </div>
-          <div>
+          <div className="useful-link-description">
             <p>
               Geoportal Infrastruktury Informacji Przestrzennej dla obszaru
               całej Polski
@@ -237,7 +237,7 @@ function MPUsefulLinks() {
               </span>
             </a>
           </div>
-          <div>
+          <div className="useful-link-description">
             <p>To miejsce, które ułatwia dotarcie do informacji o środowisku</p>
           </div>
         </li>
@@ -255,7 +255,7 @@ function MPUsefulLinks() {
               </span>
             </a>
           </div>
-          <div>
+          <div className="useful-link-description">
             <p>Baza informacji podatkowych Ministerstwa Finansów</p>
           </div>
         </li>

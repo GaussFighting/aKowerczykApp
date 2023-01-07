@@ -4,7 +4,7 @@ import SocialMedia from "./SocialMedia";
 
 function MPAbout() {
   return (
-    <div className="container pb-5">
+    <div className="container pb-5 about px-4">
       <NavLink className="inner-link" to="/about">
         <h1>O FIRMIE</h1>
       </NavLink>

@@ -1,3 +1,7 @@
 .about-title {
   color: var(--secondary-color);
 }
+
+.about {
+  text-align: justify;
+}

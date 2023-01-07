@@ -1,5 +1,9 @@
 .blogImgCenter {
-    background: no-repeat;
-    height: 400px;
-    background-size: cover;
+  background: no-repeat;
+  height: 400px;
+  background-size: cover;
+}
+
+.card-text {
+  text-align: justify;
 }
