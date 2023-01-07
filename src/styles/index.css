@@ -55,7 +55,16 @@ a.color-green {
   color: var(--primary-color);
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 767px) {
+  .body {
+    font-size: 10px;
+  }
+  .top-image {
+    height: 40vh;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   .top-image {
     height: 40vh;
   }
@@ -77,3 +86,4 @@ a.color-green {
 @import "certificates.css";
 @import "socialactivity.css";
 @import "activity.css";
+@import "usefulllinks.css";

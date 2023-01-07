@@ -35,7 +35,7 @@ function Navigation() {
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="justify-content-end" style={{ width: "100%" }} navbar>
+          <Nav className="justify-content-end" navbar>
             <NavItem onClick={navTogglerClose}>
               <NavLink className="nav-link pl-4" to="/">
                 STRONA GŁÓWNA

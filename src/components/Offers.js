@@ -25,7 +25,7 @@ function Offers() {
           <Row>
             {allItems.map((offer) => {
               return (
-                <Col key={offer.id} md={4}>
+                <Col key={offer.id} lg={4}>
                   <Offer
                     id={offer.id}
                     title={offer.title}

@@ -3,7 +3,7 @@ h3.service-title {
 }
 .service-icon {
   color: var(--primary-color);
-  height: 150px;
+  height: 100px;
   text-align: center;
 }
 .service-icon:hover {
@@ -13,6 +13,7 @@ h3.service-title {
 .service-description {
   text-align: justify;
   min-height: 280px;
+  word-spacing: -2px;
 }
 
 .bullet-points {
@@ -20,4 +21,20 @@ h3.service-title {
   margin-left: 10;
   padding-left: 1em;
   text-indent: 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+  .service-description {
+    text-align: justify;
+    min-height: 140px;
+    word-spacing: -2px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .service-description {
+    text-align: justify;
+    min-height: 350px;
+    word-spacing: -2px;
+  }
 }

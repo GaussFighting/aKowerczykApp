@@ -16,6 +16,7 @@ const Certificates = (props) => {
     return {
       pathName: cert,
       modal: false,
+      key: idx,
     };
   });
 
@@ -61,6 +62,7 @@ const Certificates = (props) => {
             />
           </Button>
           <Modal
+            fade={false}
             isOpen={isModalOpen(cert)}
             toggle={() => {
               toggleModal(cert);
@@ -88,7 +90,7 @@ const Certificates = (props) => {
     for (let i = 0; i < listOfCerts.length; i = i + 3) {
       table = [
         ...table,
-        <Row>
+        <Row key={i}>
           <Col key={i}>{listOfCerts[i]}</Col>
           <Col key={i + 1}>{listOfCerts[i + 1]} </Col>
           <Col key={i + 2}>{listOfCerts[i + 2]} </Col>

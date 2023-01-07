@@ -16,7 +16,7 @@ function About() {
   return (
     <div>
       <TopImage image={aboutPageImage} position={88} />
-      <div className="container page-container py-5 ">
+      <div className="container page-container py-5 px-4 about">
         <h1 className="about-title">O FIRMIE</h1>
 
         <p>
