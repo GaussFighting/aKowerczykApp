@@ -1,8 +1,12 @@
 .bullet-points {
-  list-style-type: "\27A2";
-  margin-left: 10;
+  list-style-image: url("./images/bulletPoint.png");
+  /* list-style-type: "\27A2"; */
+  margin-left: 10px;
+  margin-top: 5px;
   padding-left: 1em;
   text-indent: 0;
+  list-style-position: inside;
+  vertical-align: sub;
 }
 .about {
   text-align: justify;

@@ -20,7 +20,7 @@ function MPOffers() {
         <Row>
           {selectedItems.map((offer) => {
             return (
-              <Col lg={4} key={offer.id}>
+              <Col lg={12} key={offer.id}>
                 <Offer
                   id={offer.id}
                   title={offer.title}

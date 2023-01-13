@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import SocialMedia from "./SocialMedia";
 import TopImage from "./TopImage";
-import aboutPageImage from "../styles/images/poland-gfc372c5c7_1920.jpg";
+import aboutPageImage from "../styles/images/aboutLogo.jpg";
 import Certificates from "./Certifacates";
 import certs from "../styles/images/index";
 
@@ -15,7 +15,7 @@ function About() {
 
   return (
     <div>
-      <TopImage image={aboutPageImage} position={88} />
+      <TopImage image={aboutPageImage} position={20} />
       <div className="container page-container py-5 px-4 about">
         <h1 className="about-title">O FIRMIE</h1>
 
@@ -25,7 +25,7 @@ function About() {
         </p>
 
         <p>
-          Nasze usługi skierowane są do developerów, inwestorów, funduszy
+          Nasze usługi skierowane są do deweloperów, inwestorów, funduszy
           inwestycyjnych, przedsiębiorstw przesyłowych oraz osób prywatnych.
         </p>
 
@@ -38,7 +38,7 @@ function About() {
         <ul>
           <li className="bullet-points"> inwestycyjnego</li>
           <li className="bullet-points"> transakcyjnego</li>
-          <li className="bullet-points"> strategicznego dla developerów</li>
+          <li className="bullet-points"> strategicznego dla deweloperów</li>
           <li className="bullet-points"> w zakresie służebności przesyłu</li>
           <li className="bullet-points">
             przy zawieraniu umów na rynku nieruchomości
@@ -51,7 +51,7 @@ function About() {
         <p>Oferujemy również usługi w zakresie:</p>
 
         <ul>
-          <li className="bullet-points"> wyceny nieruchomości oraz</li>
+          <li className="bullet-points"> wyceny nieruchomości</li>
           <li className="bullet-points"> home staging</li>
           <li className="bullet-points"> analizy rynku nieruchomości</li>
         </ul>

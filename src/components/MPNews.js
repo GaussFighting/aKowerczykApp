@@ -15,7 +15,7 @@ function MPNews() {
   return (
     <div className="container pb-5">
       <NavLink className="inner-link" to="/blog">
-        <h1>NEWSY</h1>
+        <h1>BLOG</h1>
       </NavLink>
       <Container>
         <Row>
