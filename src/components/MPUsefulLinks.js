@@ -65,19 +65,19 @@ function MPUsefulLinks() {
           </div>
         </li>
         <li>
-          <div>
-            <a
-              href="https://ekw.ms.gov.pl/eukw_ogol/menu.do"
-              className="inner-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faBook} size="2x" />{" "}
-              <span className="useful-link">
+          <a
+            href="https://ekw.ms.gov.pl/eukw_ogol/menu.do"
+            className="inner-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="book-icon">
+              {/* <FontAwesomeIcon icon={faBook} size="2x" />{" "} */}
+              <span className="useful-link useful-link-svg">
                 <b>Księgi wieczyste</b>
               </span>
-            </a>
-          </div>
+            </div>
+          </a>
           <div className="useful-link-description">
             <p>
               Aplikacja Ministerstwa Sprawiedliwości zawierająca{" "}
@@ -150,12 +150,12 @@ function MPUsefulLinks() {
             <p>
               System informacji prawnej redagowany przez zespół specjalistów w
               Ośrodku Informatyki Kancelarii Sejmu. ISAP jest częścią Systemu
-              Informacyjnego Sejmu. Baza ISAP{" "}
-              <b>zawiera opisy bibliograficzne i teksty aktów prawnych </b>{" "}
+              Informacyjnego Sejmu. Baza ISAP zawiera{" "}
+              <b>opisy bibliograficzne i teksty aktów prawnych </b>{" "}
               opublikowanych na podstawie ustawy z dnia 20 lipca 2000 r. o
               ogłaszaniu aktów normatywnych i niektórych innych aktów prawnych
               (Dz.U. 2019 poz. 1461), w wydawnictwach urzędowych:
-              <b>Dzienniku Ustaw i Monitorze Polskim</b>, wydawanych przez
+              <b> Dzienniku Ustaw i Monitorze Polskim</b>, wydawanych przez
               Rządowe Centrum Legislacji.
             </p>
           </div>

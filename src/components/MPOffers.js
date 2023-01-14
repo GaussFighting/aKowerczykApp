@@ -13,8 +13,8 @@ function MPOffers() {
   });
   return (
     <div className="container pb-5">
-      <NavLink className="inner-link" to="/offers">
-        <h1>OFERTY</h1>
+      <NavLink className="inner-link " to="/offers">
+        <h1 className="mb-4">OFERTY</h1>
       </NavLink>
       <Container>
         <Row>
