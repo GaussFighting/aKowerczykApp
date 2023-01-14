@@ -9,6 +9,11 @@
   background: no-repeat;
   height: 200px;
   width: 200px;
-  z-index: 1;
   display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .logoImgCenter {
+    opacity: 0.5;
+  }
 }
