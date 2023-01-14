@@ -1,7 +1,6 @@
 import React from "react";
 import {
   faCalculator,
-  faBook,
   faMapLocationDot,
   faSection,
   faChartColumn,
