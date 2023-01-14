@@ -30,9 +30,11 @@ function MPAbout() {
         <li className="bullet-points"> strategicznego dla deweloperów</li>
         <li className="bullet-points"> w zakresie służebności przesyłu</li>
         <li className="bullet-points">
+          {" "}
           przy zawieraniu umów na rynku nieruchomości
         </li>
         <li className="bullet-points">
+          {" "}
           przy formalnościach dotyczących spadków i darowizn
         </li>
       </ul>
