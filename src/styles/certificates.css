@@ -25,3 +25,21 @@
   border-width: 2px;
   border-color: var(--secondary-color);
 }
+.certificate {
+  padding: 10px;
+}
+@media only screen and (max-width: 767px) {
+  .modal-img {
+    width: 40vh;
+    height: auto;
+    position: static;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+  .modal-img {
+    width: 50vh;
+    height: auto;
+    position: static;
+  }
+}

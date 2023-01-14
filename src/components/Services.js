@@ -24,7 +24,7 @@ function Services() {
         <h1 className="services-title">USŁUGI</h1>
         <Container>
           <Row className="services-row">
-            <Col md={4} className="services-col">
+            <Col lg={4} className="services-col">
               <Service
                 icon={faSearchLocation}
                 title={"DORADZTWO"}
@@ -35,7 +35,7 @@ function Services() {
                 isCollapseOpen={true}
               />
             </Col>
-            <Col md={4} className="services-col">
+            <Col lg={4} className="services-col">
               <Service
                 icon={faMarker}
                 title={"HOME STAGING"}
@@ -47,7 +47,7 @@ function Services() {
                 isCollapseOpen={true}
               />
             </Col>
-            <Col md={4} className="services-col">
+            <Col lg={4} className="services-col">
               <Service
                 icon={faHouseUser}
                 title={"WYCENA"}
@@ -57,10 +57,10 @@ function Services() {
             </Col>
           </Row>
           <Row className="services-row">
-            <Col md={4} className="services-col">
+            <Col lg={4} className="services-col">
               <Service
                 icon={faSearchLocation}
-                title={"DLA DEWELOPERÓW"}
+                title={"OBSŁUGA INWESTYCJI DLA DEWELOPERÓW"}
                 description={``}
                 points={[
                   "Analizy możliwości zagospodarowania",
@@ -75,10 +75,10 @@ function Services() {
                 isCollapseOpen={true}
               />
             </Col>
-            <Col md={4} className="services-col">
+            <Col lg={4} className="services-col">
               <Service
                 icon={faMarker}
-                title={"DZIEDZICZENIE /SPADEK"}
+                title={"OBSŁUGA SPRAW SPADKOWYCH"}
                 description={""}
                 points={[
                   "Pomoc w przygotowaniu dokumentów",
@@ -90,10 +90,10 @@ function Services() {
                 isCollapseOpen={true}
               />
             </Col>
-            <Col md={4} className="services-col">
+            <Col lg={4} className="services-col">
               <Service
                 icon={faHouseUser}
-                title={"SŁUZEBNOSCI PRZESYŁU"}
+                title={"ANALIZA SŁUŻEBNOŚCI PRZESYŁU"}
                 description={``}
                 points={[
                   "ANALIZA NIERUCHOMOSCI",

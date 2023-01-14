@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import TopImage from "./TopImage";
-import offersPageImage from "../styles/images/interior-design-g8903eca74_1920.jpg";
+import offersPageImage from "../styles/images/offersLogo.jpg";
 import offers from "../data/offers.json";
 import { Card, CardBody, CardTitle, CardSubtitle, CardText } from "reactstrap";
 import Offer from "./Offer";
@@ -28,7 +28,7 @@ function OfferPage() {
 
   return (
     <div>
-      <TopImage image={offersPageImage} position={68} />
+      <TopImage image={offersPageImage} position={58} />
       <div className="container page-container py-5">
         <Offer carouselImages={offer.photos} />
         <Card>
