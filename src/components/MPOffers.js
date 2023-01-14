@@ -13,14 +13,14 @@ function MPOffers() {
   });
   return (
     <div className="container pb-5">
-      <NavLink className="inner-link" to="/offers">
-        <h1>OFERTY</h1>
+      <NavLink className="inner-link " to="/offers">
+        <h1 className="mb-4">OFERTY</h1>
       </NavLink>
       <Container>
         <Row>
           {selectedItems.map((offer) => {
             return (
-              <Col lg={4} key={offer.id}>
+              <Col lg={12} key={offer.id}>
                 <Offer
                   id={offer.id}
                   title={offer.title}

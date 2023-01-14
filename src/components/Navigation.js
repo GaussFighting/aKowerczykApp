@@ -8,7 +8,7 @@ import {
   NavItem,
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
-import logo from "../styles/images/logoWhite.png";
+import logo from "../styles/images/logoWhiteCut.png";
 
 function Navigation() {
   const [isOpen, setIsOpen] = useState(false);

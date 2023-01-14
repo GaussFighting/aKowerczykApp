@@ -51,6 +51,14 @@ code {
 .inner-link:hover {
   color: var(--secondary-color);
 }
+
+.inner-link-footer {
+  color: #fff;
+  text-decoration: none;
+}
+.inner-link-footer:hover {
+  color: var(--secondary-color);
+}
 a.color-green {
   color: var(--primary-color);
 }
@@ -61,6 +69,10 @@ a.color-green {
   }
   .top-image {
     height: 40vh;
+  }
+  .logo {
+    height: 155px;
+    padding-left: 30px;
   }
 }
 

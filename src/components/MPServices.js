@@ -52,7 +52,7 @@ function MPServices() {
           <Col lg={4}>
             <Service
               icon={faSearchLocation}
-              title={"DLA DEWELOPERÓW"}
+              title={"OBSŁUGA INWESTYCJI DLA DEWELOPERÓW"}
               description={``}
               points={[
                 "Analizy możliwości zagospodarowania",
@@ -70,7 +70,7 @@ function MPServices() {
           <Col lg={4}>
             <Service
               icon={faMarker}
-              title={"DZIEDZICZENIE /SPADEK"}
+              title={"OBSŁUGA SPRAW SPADKOWYCH"}
               description={""}
               points={[
                 "Pomoc w przygotowaniu dokumentów",
@@ -85,7 +85,7 @@ function MPServices() {
           <Col lg={4}>
             <Service
               icon={faHouseUser}
-              title={"SŁUZEBNOSCI PRZESYŁU"}
+              title={"ANALIZA SŁUŻEBNOŚCI PRZESYŁU"}
               description={``}
               points={[
                 "ANALIZA NIERUCHOMOSCI",

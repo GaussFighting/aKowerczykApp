@@ -17,7 +17,7 @@ h3.service-title {
 }
 
 .bullet-points {
-  list-style-type: "\27A2";
+  list-style-image: url("./images/bulletPoint.png");
   margin-left: 10;
   padding-left: 1em;
   text-indent: 0;

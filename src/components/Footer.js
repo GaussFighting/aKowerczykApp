@@ -26,8 +26,21 @@ function Footer() {
             <NavLink className="fw-bold pb-2 footer-contact" to="/contact">
               KONTAKT
             </NavLink>
-            <div> telefon: +48 695 606 006 </div>
-            <div> e-mail: naknieruchomosci@gmail.com </div>
+            <div>
+              <a className="inner-link-footer" href="tel:+48695606006">
+                {" "}
+                telefon: +48 695 606 006{" "}
+              </a>
+            </div>
+            <div>
+              <a
+                className="inner-link-footer"
+                href="mailto:naknieruchomosci@gmail.com"
+              >
+                {" "}
+                e-mail: naknieruchomosci@gmail.com{" "}
+              </a>
+            </div>
             <div className="pt-2">
               <NavLink
                 className="fw-bold pb-2 footer-contact"

@@ -29,6 +29,7 @@ function Blog() {
                 src={news.srcMax}
                 title={news.title}
                 data={news.data}
+                logo={news.logo}
                 description={news.descriptionLong}
                 position={news.position}
               />
