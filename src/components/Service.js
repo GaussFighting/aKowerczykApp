@@ -23,8 +23,12 @@ function Service(props) {
               {props.description}
               {props.points && (
                 <ul>
-                  {props.points.map((point) => {
-                    return <li className="bullet-points">{point}</li>;
+                  {props.points.map((point, idx) => {
+                    return (
+                      <li className="bullet-points" key={idx}>
+                        {point}
+                      </li>
+                    );
                   })}
                 </ul>
               )}

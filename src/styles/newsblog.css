@@ -1,5 +1,19 @@
 .blogImgCenter {
-    background: no-repeat;
-    height: 400px;
-    background-size: cover;
+  background: no-repeat;
+  height: 400px;
+  background-size: cover;
+}
+.logoImgCenter {
+  top: -5px;
+  right: 30px;
+  background: no-repeat;
+  height: 200px;
+  width: 200px;
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .logoImgCenter {
+    opacity: 0.5;
+  }
 }

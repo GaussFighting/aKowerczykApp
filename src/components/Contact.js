@@ -1,7 +1,11 @@
 import React, { useEffect } from "react";
 import TopImage from "./TopImage";
 import ContactForm from "./ContactForm";
-import { faEnvelope, faPhoneSquare } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faPhoneSquare,
+  faAddressBook,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import contactPageImage from "../styles/images/smartphone-g5db46a158_1920.jpg";
 
@@ -30,6 +34,14 @@ function Contact() {
               <FontAwesomeIcon icon={faPhoneSquare} size="2x" />{" "}
               <span className="useful-link">+48 695 606 006</span>
             </a>
+          </div>
+          <div>
+            <FontAwesomeIcon icon={faAddressBook} size="2x" />{" "}
+            <span>NIP: 8970030520</span>
+          </div>
+          <div>
+            <FontAwesomeIcon icon={faAddressBook} size="2x" />{" "}
+            <span>REGON: 930291836 </span>
           </div>
         </div>
         <ContactForm />

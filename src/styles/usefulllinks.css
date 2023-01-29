@@ -1,0 +1,33 @@
+.useful-link-svg {
+  margin-top: 20px;
+  padding-left: 50px;
+  white-space: nowrap;
+  display: inline-flex;
+}
+
+.useful-link-description {
+  text-align: justify;
+}
+
+div.book-icon {
+  display: inline-block;
+  background-image: url("./images/bookIcon128.svg");
+  background-size: 44px 44px;
+
+  width: 44px;
+  height: 44px;
+  content: "";
+  margin-right: 15px;
+}
+
+div.book-icon:hover {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url("./images/bookIcon128hover.svg");
+  background-size: 44px 44px;
+  color: var(--secondary-color);
+  width: 44px;
+  height: 44px;
+  content: "";
+  margin-right: 5px;
+}

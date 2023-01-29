@@ -117,8 +117,8 @@ function ContactForm() {
                   name="status"
                   onClick={(e) => setIsPolicyAccepted(e.target.checked)}
                 />{" "}
-                *Wyrażam zgodę na przetwarzanie moich danych osobowych przez
-                nazwaFirmy, adresFirmy w celu i w zakresie niezbędnym do
+                *Wyrażam zgodę na przetwarzanie moich danych osobowych przez NAK
+                NIERUCHOMOŚCI AGATA KOWERCZYK w celu i w zakresie niezbędnym do
                 realizacji obsługi niniejszego zgłoszenia. Zapoznałem się z
                 treścią informacji o sposobie przetwarzania moich danych
                 osobowych ze stony{" "}

@@ -4,7 +4,7 @@ import SocialMedia from "./SocialMedia";
 
 function MPAbout() {
   return (
-    <div className="container pb-5">
+    <div className="container pb-5 about px-4">
       <NavLink className="inner-link" to="/about">
         <h1>O FIRMIE</h1>
       </NavLink>
@@ -15,7 +15,7 @@ function MPAbout() {
       </p>
 
       <p>
-        Nasze usługi skierowane są do developerów, inwestorów, funduszy
+        Nasze usługi skierowane są do deweloperów, inwestorów, funduszy
         inwestycyjnych, przedsiębiorstw przesyłowych oraz osób prywatnych.
       </p>
 
@@ -27,12 +27,14 @@ function MPAbout() {
       <ul>
         <li className="bullet-points"> inwestycyjnego</li>
         <li className="bullet-points"> transakcyjnego</li>
-        <li className="bullet-points"> strategicznego dla developerów</li>
+        <li className="bullet-points"> strategicznego dla deweloperów</li>
         <li className="bullet-points"> w zakresie służebności przesyłu</li>
         <li className="bullet-points">
+          {" "}
           przy zawieraniu umów na rynku nieruchomości
         </li>
         <li className="bullet-points">
+          {" "}
           przy formalnościach dotyczących spadków i darowizn
         </li>
       </ul>
@@ -40,7 +42,7 @@ function MPAbout() {
       <p>Oferujemy również usługi w zakresie:</p>
 
       <ul>
-        <li className="bullet-points"> wyceny nieruchomości oraz</li>
+        <li className="bullet-points"> wyceny nieruchomości</li>
         <li className="bullet-points"> home staging</li>
         <li className="bullet-points"> analizy rynku nieruchomości</li>
       </ul>

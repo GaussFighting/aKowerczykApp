@@ -16,7 +16,7 @@ function MPServices() {
       </NavLink>
       <Container fluid>
         <Row>
-          <Col md={4}>
+          <Col lg={4}>
             <Service
               icon={faSearchLocation}
               title={"DORADZTWO"}
@@ -27,7 +27,7 @@ function MPServices() {
               isCollapseOpen={false}
             />
           </Col>
-          <Col md={4}>
+          <Col lg={4}>
             <Service
               icon={faMarker}
               title={"HOME STAGING"}
@@ -39,7 +39,7 @@ function MPServices() {
               isCollapseOpen={false}
             />
           </Col>
-          <Col md={4}>
+          <Col lg={4}>
             <Service
               icon={faHouseUser}
               title={"WYCENA"}
@@ -49,10 +49,10 @@ function MPServices() {
           </Col>
         </Row>
         <Row>
-          <Col md={4}>
+          <Col lg={4}>
             <Service
               icon={faSearchLocation}
-              title={"DLA DEWELOPERÓW"}
+              title={"OBSŁUGA INWESTYCJI DLA DEWELOPERÓW"}
               description={``}
               points={[
                 "Analizy możliwości zagospodarowania",
@@ -67,10 +67,10 @@ function MPServices() {
               isCollapseOpen={false}
             />
           </Col>
-          <Col md={4}>
+          <Col lg={4}>
             <Service
               icon={faMarker}
-              title={"DZIEDZICZENIE /SPADEK"}
+              title={"OBSŁUGA SPRAW SPADKOWYCH"}
               description={""}
               points={[
                 "Pomoc w przygotowaniu dokumentów",
@@ -82,10 +82,10 @@ function MPServices() {
               isCollapseOpen={false}
             />
           </Col>
-          <Col md={4}>
+          <Col lg={4}>
             <Service
               icon={faHouseUser}
-              title={"SŁUZEBNOSCI PRZESYŁU"}
+              title={"ANALIZA SŁUŻEBNOŚCI PRZESYŁU"}
               description={``}
               points={[
                 "ANALIZA NIERUCHOMOSCI",

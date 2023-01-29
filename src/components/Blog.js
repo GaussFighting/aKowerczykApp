@@ -21,14 +21,15 @@ function Blog() {
       <TopImage image={blogPageImage} position={68} />
       <div className="container page-container py-5">
         <h1 className="blog-title">BLOG</h1>
-        {allData.map((news) => {
+        {allData.map((news, index) => {
           return (
-            <CardColumns>
+            <CardColumns key={index}>
               <NewsBlog
                 id={news.id}
                 src={news.srcMax}
                 title={news.title}
                 data={news.data}
+                logo={news.logo}
                 description={news.descriptionLong}
                 position={news.position}
               />
