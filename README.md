@@ -1,70 +1,157 @@
-# Getting Started with Create React App
+# aKowerczykApp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A single page website for a real estate company. Visitors can browse property offers, read about the company's services, check news and certificates, and contact the company.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Home page assembled from sections: about, services, offers, news, useful links, certificates and contact
+- Property offers list and a dedicated page for every offer (`/offer/:id`)
+- Services page
+- Blog / news section
+- About page and company certificates
+- Contact page with a contact form
+- Privacy policy page
+- Sticky navigation with smooth in-page scrolling (`react-router-hash-link`)
+- Responsive layout (Bootstrap 5)
+- Content stored in JSON files, easy to update without changing the components
 
-### `yarn start`
+## Architecture
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The app is a client-side React single page application. There is no backend in this repository: routing is handled in the browser and the content comes from static JSON files bundled with the app.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```mermaid
+flowchart LR
+    User([Visitor's browser])
 
-### `yarn test`
+    subgraph SPA["React SPA — src/"]
+        ROUTER["React Router<br/>App.js"]
+        NAV["Navigation · Footer"]
+        PAGES["Pages<br/>MainPage · Services · Offers<br/>OfferPage · Blog · About<br/>Contact · PrivacyPolicy"]
+        DATA[("data/<br/>offers.json · news.json · activity.json")]
+        STYLES["styles/<br/>CSS · fonts · images"]
+    end
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    HOST["Static hosting<br/>build/"]
 
-### `yarn build`
+    User -->|HTTPS| HOST
+    HOST --> ROUTER
+    ROUTER --> NAV
+    ROUTER --> PAGES
+    DATA --> PAGES
+    STYLES --> PAGES
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Routes
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Route | Component | Description |
+|-------|-----------|-------------|
+| `/` | `MainPage` | Landing page with all sections |
+| `/services` | `Services` | Company services |
+| `/offers` | `Offers` | List of property offers |
+| `/offer/:id` | `OfferPage` | Details of a single offer |
+| `/blog` | `Blog` | News and articles |
+| `/about` | `About` | About the company |
+| `/contact` | `Contact` | Contact details and form |
+| `/privacy-policy` | `PrivacyPolicy` | Privacy policy |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+A social media activity section (`/socialactivity`, `/socialactivity/:id`) is implemented but currently disabled in `App.js`.
 
-### `yarn eject`
+### Home page composition
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```mermaid
+flowchart TD
+    MP["MainPage"] --> TOP["TopImage (hero)"]
+    MP --> A["MPAbout"]
+    MP --> S["MPServices"]
+    MP --> O["MPOffers"]
+    MP --> N["MPNews"]
+    MP --> L["MPUsefulLinks"]
+    MP --> C["MPCertificates"]
+    MP --> CT["MPContact"]
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Tech stack
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+| Layer | Technology |
+|-------|------------|
+| Framework | React 18 (Create React App) |
+| Routing | React Router 6, react-router-hash-link |
+| UI | Bootstrap 5, reactstrap, custom CSS |
+| Icons | Font Awesome (free solid and brands) |
+| Testing | React Testing Library, Jest |
+| Package manager | Yarn |
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Project structure
 
-## Learn More
+```
+aKowerczykApp/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Navigation.js, Footer.js, TopImage.js
+│   │   ├── MainPage.js
+│   │   ├── MPAbout.js, MPServices.js, MPOffers.js, MPNews.js,
+│   │   │   MPUsefulLinks.js, MPCertificates.js, MPContact.js   # home page sections
+│   │   ├── Services.js, Service.js
+│   │   ├── Offers.js, Offer.js, OfferPage.js
+│   │   ├── Blog.js, News.js, NewsBlog.js
+│   │   ├── About.js, Certifacates.js
+│   │   ├── Contact.js, ContactForm.js
+│   │   ├── PrivacyPolicy.js
+│   │   └── SocialActivity.js, SocialMedia.js, Activity.js        # currently disabled
+│   ├── data/                # offers.json, news.json, activity.json
+│   ├── styles/              # one CSS file per view, fonts, images
+│   ├── App.js               # layout and routes
+│   └── index.js
+├── package.json
+└── yarn.lock
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Getting started
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Prerequisites
 
-### Code Splitting
+- Node.js 16+ 
+- Yarn
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Install and run
 
-### Analyzing the Bundle Size
+```bash
+git clone https://github.com/GaussFighting/aKowerczykApp.git
+cd aKowerczykApp
+yarn install
+yarn start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The app opens at `http://localhost:3000`.
 
-### Making a Progressive Web App
+### Build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+yarn build
+```
 
-### Advanced Configuration
+The production build is created in the `build/` folder and can be deployed to any static hosting (Netlify, GitHub Pages, ...). Because the app uses client-side routing, configure the host to redirect all paths to `index.html`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Tests
 
-### Deployment
+```bash
+yarn test
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Updating content
 
-### `yarn build` fails to minify
+- **Offers:** edit `src/data/offers.json` (each offer needs a unique `id` used in `/offer/:id`)
+- **News / blog:** edit `src/data/news.json`
+- **Images and fonts:** `src/styles/images`, `src/styles/fonts`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Roadmap
+
+- [ ] Enable the social media activity section
+- [ ] Offer filtering and search
+- [ ] SEO: page titles, meta tags, sitemap
+- [ ] Connect offers to an API or CMS instead of JSON files
+
+## License
+
+MIT © 2026 Krzysztof Kowerczyk
