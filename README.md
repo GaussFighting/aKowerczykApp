@@ -152,6 +152,3 @@ yarn test
 - [ ] SEO: page titles, meta tags, sitemap
 - [ ] Connect offers to an API or CMS instead of JSON files
 
-## License
-
-MIT © 2026 Krzysztof Kowerczyk
